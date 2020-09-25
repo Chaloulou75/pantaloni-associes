@@ -1,19 +1,22 @@
 <template>
-    <div class="min-h-screen text-white bg-gray-900 border-b-2 border-gray-300" id="contact">
-      <h2 class="py-4 text-3xl font-semibold tracking-wider text-center uppercase">Contact</h2>
-      <div class="items-center justify-between sm:flex-col-reverse lg:flex">
-        <div class="w-full px-4 lg:w-1/2">
-          <p class="mx-auto text-lg tracking-wide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero, incidunt facere.<br>
-          Ut cillum cillum nostrud sunt id elit. Quis pariatur amet ipsum exercitation cupidatat cupidatat dolore. Culpa cillum ipsum aliquip aliqua consectetur est sunt commodo cillum est pariatur. Eu voluptate culpa dolore cupidatat officia mollit Lorem. Eiusmod magna in est veniam adipisicing enim est adipisicing eu ea reprehenderit aliqua elit exercitation. Minim consectetur quis nostrud aute consectetur ut non veniam in culpa ad tempor. Velit qui officia commodo anim minim dolor nulla eu reprehenderit ea esse.
-          <br>
-          Adipisicing incididunt nisi ut dolore anim culpa dolore labore. Sit anim id consequat est. Elit laborum proident quis sunt. Non fugiat labore tempor commodo ullamco Lorem eu culpa in magna enim id velit. Tempor laboris consequat nulla eiusmod aute quis deserunt officia enim magna tempor irure. In excepteur excepteur adipisicing sit laboris laborum quis Lorem sint ullamco nostrud. Aliquip reprehenderit voluptate proident sint commodo reprehenderit laborum aliqua amet dolore et.
-          <br>
-          Adipisicing dolor sint veniam aliquip. Nulla consequat enim quis quis ea deserunt veniam pariatur adipisicing nulla exercitation et magna aliquip. Labore laborum labore velit esse aliqua excepteur irure Lorem cupidatat sit adipisicing sint sint deserunt.
-          </p>
+    <div class="min-h-screen" id="contact">
+      <h2 class="py-4 my-4 text-3xl font-semibold tracking-wider text-center ">Contact</h2>
+      <div class="lg:flex">
+        <div class="flex justify-start w-full px-8 text-gray-700 lg:justify-center lg:w-1/2">
+         <div>
+            <p class="flex items-center text-3xl"><svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>Adresse:</p >
+            <p class="ml-10 text-2xl">Cabinet Pantaloni et Associés</p>
+            <p class="ml-10 text-2xl">25 rue du petit bois</p>
+            <p class="ml-10 text-2xl">75017 Paris</p>
+          </div>
         </div>
 
-        <div class="w-full lg:w-1/2">
-          <img src="~assets/img/livres.jpg" alt="hero" class="px-3 py-6 mx-auto sm:mx-0" />
+        <div class="flex justify-start w-full px-8 text-gray-700 lg:justify-center lg:w-1/2">
+          <div>
+          <p class="flex items-center my-4 text-2xl lg:my-0"><svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg> +33 1 22 22 22 22</p>
+
+          <p class="flex items-center text-2xl"><svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg> email@email.com</p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 <template>
   <div>
+      <Hero />
       <Cabinet />
       <Expertise />
       <Equipe />

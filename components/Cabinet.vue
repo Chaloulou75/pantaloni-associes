@@ -1,10 +1,10 @@
 <template>
-    <div class="min-h-screen border-b-2 border-gray-300">
+    <div class="min-h-screen" id="cabinet">
 
-    <h2 class="py-4 text-3xl font-semibold tracking-wider text-center uppercase" id="cabinet">Le cabinet</h2>
+    <h2 class="py-4 my-4 text-3xl font-semibold tracking-wider text-center" >Le cabinet</h2>
       <div class="items-center justify-between lg:flex">
         <div class="w-full lg:w-1/2">
-          <img src="~assets/img/statue.jpg" alt="hero" class="px-3 py-6 mx-auto sm:mx-0" />
+          <img src="~assets/img/compress/statue.jpg" alt="hero" class="px-3 py-6 mx-auto sm:mx-0" />
         </div>
 
         <div class="w-full px-4 lg:w-1/2">
@@ -23,4 +23,9 @@
 export default {
 }
 </script>
+
+<style lang="scss" scoped>
+
+
+</style>
 
