@@ -15,7 +15,7 @@ nav .nuxt-link-exact-active {
   @apply border-orange-500 border-b-2 text-orange-500 font-semibold;
 }
 
-h2 {
+h1, h2 {
   font-family: 'Parisienne';
 }
 

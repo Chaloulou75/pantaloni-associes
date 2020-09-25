@@ -2,7 +2,7 @@
     <div class="hero">
       <Navigation />
       <div class="flex items-center justify-center h-screen mx-auto">
-        <h1 class="absolute text-4xl font-semibold text-center text-black transform -translate-y-24 md:text-5xl" style="font-family: 'Parisienne';">
+        <h1 class="text-4xl font-semibold text-center text-black transform -translate-y-24 md:text-5xl">
           Pantaloni & Associés
           <span id="subtitulo" class="block px-4 mt-4 font-normal text-center">
             - Avocats à la cour -
