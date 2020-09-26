@@ -41,16 +41,7 @@ h1, h2 {
     max-width: 800px;
   }
 }
-
-/* main {
-  margin: 0 auto;
-  margin-top: 25vh;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
-  max-width: 1280px;
-  text-align: center;
-}
-
+/*
 .fade-down-enter-active {
     animation-name: fadeInDown;
     animation-duration: 0.5s;

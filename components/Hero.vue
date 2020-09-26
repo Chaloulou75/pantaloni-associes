@@ -2,12 +2,14 @@
     <div class="hero">
       <Navigation />
       <div class="flex items-center justify-center h-screen mx-auto">
-        <h1 class="text-4xl font-semibold text-center text-black transform -translate-y-24 md:text-5xl">
+        <transition name="slide-bottom">
+        <h1 class="relative text-4xl font-semibold text-center text-black transform -translate-y-24 md:text-5xl">
           Pantaloni & Associés
           <span id="subtitulo" class="block px-4 mt-4 font-normal text-center">
             - Avocats à la cour -
           </span>
         </h1>
+        </transition>
       </div>
 
     </div>
@@ -46,22 +48,12 @@ export default {
 	100% { background-position: 0% 30%, 0 0;}
 }
 
-.img-hover-zoom {
-  //height: 300px; /* Modify this according to your need */
-  overflow: hidden; /* Removing this will break the effects */
+.slide-bottom-enter-active {
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
-
-/* Slow-motion Zoom Container */
-.img-hover-zoom--slowmo img {
-  transform-origin: 50% 65%;
-  transition: transform 5s, filter 3s ease-in-out;
-  filter: brightness(150%);
-}
-
-/* The Transformation */
-.img-hover-zoom--slowmo:hover img {
-  filter: brightness(100%);
-  transform: scale(3);
+.slide-bottom-enter {
+  opacity: 0;
+  transform: translate3d(0, 15px, 0);
 }
 
 </style>
