@@ -1,26 +1,43 @@
 <template>
-    <div class="min-h-screen" id="equipe">
-      <h2 class="py-4 my-4 text-3xl font-semibold tracking-wider text-center" >L'équipe</h2>
-        <div class="items-center justify-between lg:flex">
-        <div class="w-full lg:w-1/2">
-          <img src="~assets/img/compress/plumes.jpg" alt="plume" class="px-3 py-6 mx-auto sm:mx-0" />
-        </div>
+  <div class="min-h-screen" id="equipe">
+    <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75">
+      L'équipe
+    </h2>
+    <div class="items-center justify-between lg:flex">
 
-        <div class="w-full px-6 lg:w-1/2">
+      <div class="w-full lg:w-1/2">
+        <Modal2 />
+      </div>
 
-        <p class="mx-auto text-lg tracking-wide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero, incidunt facere.<br>
-        Ut cillum cillum nostrud sunt id elit. Quis pariatur amet ipsum exercitation cupidatat cupidatat dolore. Culpa cillum ipsum aliquip aliqua consectetur est sunt commodo cillum est pariatur. Eu voluptate culpa dolore cupidatat officia mollit Lorem. Eiusmod magna in est veniam adipisicing enim est adipisicing eu ea reprehenderit aliqua elit exercitation. Minim consectetur quis nostrud aute consectetur ut non veniam in culpa ad tempor. Velit qui officia commodo anim minim dolor nulla eu reprehenderit ea esse.
-        <br>
-        Adipisicing incididunt nisi ut dolore anim culpa dolore labore. Sit anim id consequat est. Elit laborum proident quis sunt. Non fugiat labore tempor commodo ullamco Lorem eu culpa in magna enim id velit. Tempor laboris consequat nulla eiusmod aute quis deserunt officia enim magna tempor irure. In excepteur excepteur adipisicing sit laboris laborum quis Lorem sint ullamco nostrud. Aliquip reprehenderit voluptate proident sint commodo reprehenderit laborum aliqua amet dolore et.</p>
-        </div>
+      <div class="flex flex-col justify-between w-full px-6 lg:w-1/2">
+        <h2 class="py-2 mb-6 text-5xl font-medium text-center text-gray-700 hover:text-gray-600">Marc Pantaloni</h2>
+        <div class="py-2 line-1"></div>
+        <p class="px-4 mx-auto text-lg tracking-wide">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo
+          blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis
+          repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero,
+          incidunt facere.<br />
+          Ut cillum cillum nostrud sunt id elit. Quis pariatur amet ipsum
+          exercitation cupidatat cupidatat dolore. Culpa cillum ipsum aliquip
+          aliqua consectetur est sunt commodo cillum est pariatur.
+        </p>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
-export default {
+import Modal2 from './Modal2.vue'
 
+export default {
+  components : {
+    Modal2
+  }
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>
 
 

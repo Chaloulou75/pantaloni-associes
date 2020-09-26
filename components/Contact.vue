@@ -1,7 +1,7 @@
 <template>
-    <div class="min-h-screen" id="contact">
-      <h2 class="py-4 my-4 text-3xl font-semibold tracking-wider text-center ">Contact</h2>
-      <div class="bg-gray-200 lg:flex">
+    <div class="min-h-screen bg-gray-200" id="contact">
+      <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75">Contact</h2>
+      <div class="lg:flex">
         <div class="flex justify-start w-full px-2 text-gray-700 lg:px:8 lg:justify-center lg:w-1/2">
           <div class="px-12 py-4 rounded-lg">
               <p class="flex items-center text-lg lg:text-xl">

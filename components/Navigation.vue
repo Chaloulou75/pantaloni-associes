@@ -21,7 +21,7 @@
       <div class="hidden desktop-menu lg:block">
         <ul class="flex justify-around space-x-6 font-medium uppercase">
           <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform hover:border-b-2 hover:border-orange-500 hover:text-orange-500 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#cabinet'}">Le cabinet</NuxtLink></li>
-          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform hover:border-b-2 hover:border-orange-500 hover:text-orange-500 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#expertise'}">Savoir faire</NuxtLink></li>
+          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform hover:border-b-2 hover:border-orange-500 hover:text-orange-500 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#savoir-faire'}">Savoir faire</NuxtLink></li>
           <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform hover:border-b-2 hover:border-orange-500 hover:text-orange-500 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#equipe'}">L'equipe</NuxtLink></li>
           <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform hover:border-b-2 hover:border-orange-500 hover:text-orange-500 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#contact'}">Contact</NuxtLink></li>
         </ul>
@@ -33,7 +33,7 @@
             <NuxtLink :to="{ path: '/',hash:'#cabinet'}">Le cabinet</NuxtLink>
           </li>
           <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform hover:border-b-2 hover:border-orange-500 hover:text-orange-500 hover:translate-x-2">
-            <NuxtLink :to="{ path: '/',hash:'#expertise'}">Savoir faire</NuxtLink>
+            <NuxtLink :to="{ path: '/',hash:'#savoir-faire'}">Savoir faire</NuxtLink>
           </li>
           <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform hover:border-b-2 hover:border-orange-500 hover:text-orange-500 hover:translate-x-2">
             <NuxtLink :to="{ path: '/',hash:'#equipe'}">L'equipe</NuxtLink>

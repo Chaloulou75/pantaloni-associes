@@ -1,6 +1,6 @@
 <template>
-    <div class="min-h-screen" id="expertise">
-      <h2 class="py-4 my-4 text-3xl font-semibold tracking-wider text-center" >Savoir faire</h2>
+    <div class="min-h-screen" id="savoir-faire">
+      <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75" >Savoir faire</h2>
       <div class="items-center justify-between lg:flex">
         <div class="w-full px-4 lg:w-1/2">
           <p class="mx-auto text-lg tracking-wide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero, incidunt facere.<br>
