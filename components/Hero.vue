@@ -2,14 +2,12 @@
     <div class="hero">
       <Navigation />
       <div class="flex items-center justify-center h-screen mx-auto">
-        <transition name="slide-bottom">
         <h1 class="relative text-4xl font-semibold text-center text-black transform -translate-y-24 md:text-5xl">
           Pantaloni & Associés
           <span id="subtitulo" class="block px-4 mt-4 font-normal text-center">
             - Avocats à la cour -
           </span>
         </h1>
-        </transition>
       </div>
 
     </div>
@@ -48,12 +46,5 @@ export default {
 	100% { background-position: 0% 30%, 0 0;}
 }
 
-.slide-bottom-enter-active {
-  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
-}
-.slide-bottom-enter {
-  opacity: 0;
-  transform: translate3d(0, 15px, 0);
-}
 
 </style>
