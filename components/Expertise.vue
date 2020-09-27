@@ -11,7 +11,7 @@
         </div>
 
         <div class="w-full lg:w-1/2">
-          <img src="~assets/img/compress/statue.jpg" alt="hero" class="px-3 py-6 mx-auto sm:mx-0" />
+          <img src="~assets/img/compress/statue.jpg" alt="hero" class="px-3 py-2 mx-auto sm:mx-0" />
         </div>
       </div>
     </div>

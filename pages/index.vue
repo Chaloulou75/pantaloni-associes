@@ -29,7 +29,7 @@ export default {
   },
   data() {
       return {
-        title: 'Pantaloni & Associés | Avocats à la cour'
+        title: 'Pantaloni & Associés | Avocats à la Cour'
       }
     },
   head() {
@@ -39,7 +39,7 @@ export default {
           {
             hid: 'Description ',
             name: 'Description',
-            content: 'Pantaloni & Associés | Avocats à la cour'
+            content: 'Pantaloni & Associés | Avocats à la Cour'
           }
         ]
       }

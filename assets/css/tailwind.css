@@ -12,11 +12,11 @@ body {
 }
 
 nav .nuxt-link-exact-active {
-  @apply border-orange-500 border-b-2 text-orange-500 font-semibold;
+  @apply border-blue-700 border-b-2 text-blue-700 font-semibold;
 }
 
-h1, h2 {
-  font-family:  'Cormorant Garamond', 'Parisienne';
+h1, h2, .logo {
+  font-family: 'Cormorant Garamond', 'Parisienne';
 }
 
 .line-1 {
