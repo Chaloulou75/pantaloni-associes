@@ -3,7 +3,7 @@
 
     <Modalmobile />
 
-    <div class="hidden lg:flex-row lg:items-center lg:justify-between lg:flex">
+    <div class="hidden lg:flex-row-reverse lg:items-center lg:justify-between lg:flex">
 
       <div class="w-full my-4 lg:w-1/2">
         <img
@@ -24,10 +24,12 @@
 
 <script>
 import Modal2 from './Modal2.vue'
+import Modalmobile from './Modalmobile.vue'
 
 export default {
   components : {
-    Modal2
+    Modal2,
+    Modalmobile
   }
 }
 </script>
@@ -35,4 +37,5 @@ export default {
 <style lang="scss" scoped>
 
 </style>
+
 

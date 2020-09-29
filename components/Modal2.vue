@@ -1,9 +1,9 @@
 <template>
-<div class="relative bg-gray-200 rounded">
+<div class="relative">
   <div class="flex items-center justify-center w-full h-full">
     <transition name="fade">
 
-      <div v-show="show_modal" class="fixed inset-0 z-30">
+      <div v-show="show_modal" class="fixed inset-0 z-40">
 
 <!--       background -->
         <div v-show="show_modal" @click="showModal()" class="fixed inset-0 z-20 w-full h-full bg-gray-800 opacity-75 bg-filter">
@@ -15,7 +15,7 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h5 class="text-2xl text-gray-700">Marc Pantaloni</h5>
+                            <h5 class="text-2xl text-gray-700">Prénom Nom</h5>
                         </div>
                         <div class="w-full h-full p-5 overflow-y-auto modal-body">
                             <p class="text-justify text-gray-700">
@@ -36,15 +36,19 @@
     </transition>
 
     <div @click="showModal()">
-      <!-- <h2 class="py-2 text-2xl font-medium text-center text-gray-300 hover:text-gray-400">Marc Pantaloni</h2><br> -->
-      <img
-          src="~assets/img/compress/livres.jpg"
-          alt="plume"
-          class="px-3 py-2 mx-auto sm:mx-0"
-      />
-      <!-- <button class="px-6 py-3 text-white bg-blue-500 rounded" >
-          En savoir plus
-      </button> -->
+
+      <h2 class="hidden py-2 mb-2 text-5xl font-medium text-center text-gray-700 hover:text-gray-600 lg:block">Prénom Nom</h2>
+      <div class="hidden py-2 line-1 lg:block"></div>
+
+      <p class="px-1 mx-auto text-lg tracking-wide lg:px-4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo
+        blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis
+        repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero,
+        incidunt facere.<br />
+        Ut cillum cillum nostrud sunt id elit. Quis pariatur amet ipsum
+        exercitation cupidatat cupidatat dolore. Culpa cillum ipsum aliquip
+        aliqua consectetur est sunt commodo cillum est pariatur.
+      </p>
     </div>
   </div>
 </div>

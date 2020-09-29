@@ -6,7 +6,6 @@
       <Equipe />
       <Contact />
       <Footer />
-
   </div>
 </template>
 
@@ -17,6 +16,7 @@ import Expertise from './../components/Expertise.vue'
 import Equipe from './../components/Equipe.vue'
 import Contact from './../components/Contact.vue'
 import Footer from './../components/Footer.vue'
+
 
 export default {
   components :{

@@ -1,9 +1,9 @@
 <template>
-<div class="relative bg-gray-200 rounded">
+<div class="relative ">
   <div class="flex items-center justify-center w-full h-full">
     <transition name="fade">
 
-      <div v-show="show_modal" class="fixed inset-0 z-30">
+      <div v-show="show_modal" class="fixed inset-0 z-40">
 
 <!--       background -->
         <div v-show="show_modal" @click="showModal()" class="fixed inset-0 z-20 w-full h-full bg-gray-800 opacity-75 bg-filter">
@@ -15,8 +15,9 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h5 class="text-2xl text-gray-700">Jane Doe</h5>
+                            <h5 class="text-2xl text-gray-700">Prénom Nom</h5>
                         </div>
+
                         <div class="w-full h-full p-5 overflow-y-auto modal-body">
                             <p class="text-justify text-gray-700">
                                 cilis omnis nam illum maiores, porro velit deserunt neque.
@@ -35,16 +36,25 @@
       </div>
     </transition>
 
-    <div @click="showModal()">
+    <div @click="showModal()" class="mobile-modal lg:hidden">
       <!-- <h2 class="py-2 text-2xl font-medium text-center text-gray-300 hover:text-gray-400">Marc Pantaloni</h2><br> -->
-      <img
+      <h2 class="py-2 mb-2 text-5xl font-medium text-center text-gray-700 hover:text-gray-600 lg:hidden">Prenom Nom</h2>
+      <div class="py-2 line-1 lg:hidden"></div>
+
+      <div class="w-full my-4 lg:hidden">
+        <img
           src="~assets/img/compress/livres2.jpg"
           alt="plume"
-          class="px-3 py-2 mx-auto sm:mx-0"
-      />
-      <!-- <button class="px-6 py-3 text-white bg-blue-500 rounded" >
-          En savoir plus
-      </button> -->
+          class="mx-auto sm:mx-0"
+        />
+      </div>
+
+      <p class="p-2 mx-auto text-lg tracking-wide lg:hidden">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo
+        blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis
+        repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero,
+        incidunt facere.
+      </p>
     </div>
   </div>
 </div>
