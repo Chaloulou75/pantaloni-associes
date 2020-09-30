@@ -1,10 +1,15 @@
 <template>
   <div class="font-sans">
-     <nav class="relative flex justify-between w-full px-6 py-4 bg-transparent border-gold border-t-14 "><!-- -->
+     <nav class="relative flex items-center justify-between w-full px-6 py-4 bg-transparent border-gold border-t-14 "><!-- -->
+
+
       <a href="/" class="hidden text-sm font-semibold text-gray-800 uppercase transition duration-500 ease-in-out transform cursor-pointer lg:inline-block lg:text-lg hover:text-gray-900">
-        Pantaloni &amp; Associés <span class="hidden lg:inline-block lg:text-sm">|</span>
+        <span class="hidden lg:inline-block">Pantaloni &amp; Associés</span>
+        <span class="hidden lg:inline-block lg:text-sm">|</span>
         <span class="hidden text-xs text-center lg:inline-block lg:text-sm"> Avocats à la Cour</span>
       </a>
+
+
 
       <button
         class="ease-in-out outline-none mobile-hamburger transition-500 lg:hidden focus:outline-none hover:text-gold"
@@ -71,16 +76,16 @@ a {
 $color:#FFDF00;
 
 li, a {
-    background-image: linear-gradient(
+  background-image: linear-gradient(
       transparent calc(65% - 5px),
       darken($color, 1%) 5px,
-    );
-    background-size: 0;
-    background-repeat: no-repeat;
-    transition: 0.5s ease;
+  );
+  background-size: 0;
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
 
   &:hover {
-      background-size: 100%;
+    background-size: 100%;
   }
 }
 </style>
