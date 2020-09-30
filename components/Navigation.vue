@@ -77,8 +77,7 @@ li, a {
     );
     background-size: 0;
     background-repeat: no-repeat;
-    display: inline;
-    transition: 0.7s ease;
+    transition: 0.5s ease;
 
   &:hover {
       background-size: 100%;
