@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-gray-800" id="contact">
+    <div class="h-screen bg-gray-800" id="contact">
       <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center text-gray-100 bg-gray-800 opacity-75">-Contact-</h2>
 
       <div class="justify-around lg:flex">
@@ -18,8 +18,8 @@
 
         <div class="flex justify-start w-full px-2 text-gray-100 lg:px:8 lg:justify-center lg:w-1/3">
           <div class="px-12 py-4 rounded-lg lg:my-0">
-            <p class="flex items-center pb-4 text-base text-center cursor-pointer text-gold hover:text-gray-100 hover:font-semibold lg:text-2xl"><svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
-              email@email.com
+            <p class="flex items-center pb-4 text-base text-center text-gray-100 cursor-pointer hover:font-semibold lg:text-2xl"><svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
+              <a href="#" class="text-gold hover:text-gray-100">email@email.com</a>
             </p>
           </div>
         </div>

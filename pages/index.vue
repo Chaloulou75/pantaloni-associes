@@ -9,6 +9,8 @@
   </div>
 </template>
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+
 <script>
 import Hero from './../components/Hero.vue'
 import Cabinet from './../components/Cabinet.vue'
@@ -16,7 +18,6 @@ import Expertise from './../components/Expertise.vue'
 import Equipe from './../components/Equipe.vue'
 import Contact from './../components/Contact.vue'
 import Footer from './../components/Footer.vue'
-
 
 export default {
   components :{

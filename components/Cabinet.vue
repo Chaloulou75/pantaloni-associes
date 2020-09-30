@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen" id="cabinet">
-    <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75" > -Le cabinet-</h2>
+    <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75" > -Le cabinet- </h2>
       <div class="items-center justify-between my-8 lg:flex">
         <div class="w-full lg:w-1/2">
           <img src="~assets/img/compress/statue.jpg" alt="hero" class="px-3 mx-auto" />

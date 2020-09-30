@@ -15,7 +15,7 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h5 class="text-2xl text-gray-700">Prénom Nom</h5>
+                            <h5 class="text-2xl text-gray-700"><span>Prénom Nom</span></h5>
                         </div>
                         <div class="w-full h-full p-5 overflow-y-auto modal-body">
                             <p class="text-justify text-gray-700">
@@ -23,8 +23,8 @@
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, voluptates eveniet labore dolorum molestiae, modi saepe fugiat minima repudiandae repellendus obcaecati voluptatibus ab tenetur recusandae eius quos at maiores atque consectetur facilis! Nisi fuga
                             </p>
                         </div>
-                        <div class="px-5 py-3 text-right modal-footer border0-t">
-                            <button class="px-5 py-2 text-gray-800" @click="showModal()">
+                        <div class="px-5 py-3 text-right modal-footer ">
+                            <button class="px-5 py-2 text-gray-800 cursor-pointer focus:outline-none" @click="showModal()">
                               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                             </button>
                         </div>
@@ -37,7 +37,7 @@
 
     <div @click="showModal()">
 
-      <h2 class="hidden py-2 mb-2 text-5xl font-medium text-center text-gray-700 hover:text-gray-600 lg:block">Prénom Nom</h2>
+      <h2 class="hidden py-2 mb-2 text-5xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-600 lg:block"> <span > Prénom Nom </span> </h2>
       <div class="hidden py-2 line-1 lg:block"></div>
 
       <p class="px-1 mx-auto text-lg tracking-wide lg:px-4">
@@ -120,5 +120,26 @@ export default {
 .fade-leave-to{
     opacity: 0;
 }
+
+$color:#FFDF00;
+
+h2, h5 {
+  span {
+    background-image: linear-gradient(
+      transparent calc(65% - 5px),
+      darken($color, 1%) 5px,
+    );
+    background-size: 0;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.7s ease;
+  }
+  &:hover {
+    span {
+      background-size: 100%;
+    }
+  }
+}
+
 
 </style>
