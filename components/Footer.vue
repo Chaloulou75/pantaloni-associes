@@ -3,7 +3,7 @@
    <div class="flex items-center justify-between max-w-6xl px-3 py-5 m-auto text-xs text-gray-200 lg:text-sm md:flex-row">
       <div >&copy; 2020. Tous droits réservés.</div>
 
-      <NuxtLink to="/mentionslegales">Mentions légales</NuxtLink>
+      <NuxtLink to="/mentionslegales" class="hover:text-gray-300">Mentions légales</NuxtLink>
 
    </div>
 </div>
