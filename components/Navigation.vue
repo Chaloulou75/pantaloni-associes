@@ -1,13 +1,13 @@
 <template>
   <div class="font-sans">
-    <nav class="relative flex justify-between w-full px-6 py-4 bg-transparent border-blue-700 border-t-14">
-      <a href="/" class="hidden text-sm font-semibold text-gray-900 uppercase transition duration-500 ease-in-out transform cursor-pointer lg:inline-block lg:text-lg hover:text-blue-700">
+     <nav class="relative flex justify-between w-full px-6 py-4 bg-transparent border-gold border-t-14 "><!-- -->
+      <a href="/" class="hidden text-sm font-semibold text-gray-800 uppercase transition duration-500 ease-in-out transform cursor-pointer lg:inline-block lg:text-lg hover:text-gray-900">
         Pantaloni &amp; Associés <span class="hidden lg:inline-block lg:text-sm">|</span>
-        <span class="block text-xs text-center lg:inline-block lg:text-sm"> Avocats à la Cour</span>
+        <span class="hidden text-xs text-center lg:inline-block lg:text-sm"> Avocats à la Cour</span>
       </a>
 
       <button
-        class="ease-in-out outline-none mobile-hamburger transition-500 lg:hidden focus:outline-none hover:text-blue-700"
+        class="ease-in-out outline-none mobile-hamburger transition-500 lg:hidden focus:outline-none hover:text-gold"
         @click.prevent="show = ! show"
         aria-haspopup="true"
         :aria-expanded="show"
@@ -18,25 +18,25 @@
 
       <div class="hidden desktop-menu lg:block">
         <ul class="flex justify-around space-x-6 text-sm font-medium uppercase">
-          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:border-b-2 hover:border-blue-700 hover:text-blue-700 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#cabinet'}">Le cabinet</NuxtLink></li>
-          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:border-b-2 hover:border-blue-700 hover:text-blue-700 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#savoir-faire'}">Savoir faire</NuxtLink></li>
-          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:border-b-2 hover:border-blue-700 hover:text-blue-700 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#equipe'}">L'equipe</NuxtLink></li>
-          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:border-b-2 hover:border-blue-700 hover:text-blue-700 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#contact'}">Contact</NuxtLink></li>
+          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-900 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#cabinet'}">Le cabinet</NuxtLink></li>
+          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-900 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#savoir-faire'}">Savoir faire</NuxtLink></li>
+          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-900 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#equipe'}">L'equipe</NuxtLink></li>
+          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-900 hover:translate-x-2"><NuxtLink :to="{ path: '/',hash:'#contact'}">Contact</NuxtLink></li>
         </ul>
       </div>
     </nav>
     <transition name="fade">
         <ul class="absolute z-20 flex flex-col items-start w-full h-screen px-4 pb-6 space-y-2 text-lg bg-transparent mobile-menu lg:hidden" v-if="show" >
-          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:border-b-2 hover:border-blue-700 hover:text-blue-700 hover:translate-x-2">
+          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-900 hover:translate-x-2">
             <NuxtLink :to="{ path: '/',hash:'#cabinet'}">Le cabinet</NuxtLink>
           </li>
-          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:border-b-2 hover:border-blue-700 hover:text-blue-700 hover:translate-x-2">
+          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-900 hover:translate-x-2">
             <NuxtLink :to="{ path: '/',hash:'#savoir-faire'}">Savoir faire</NuxtLink>
           </li>
-          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:border-b-2 hover:border-blue-700 hover:text-blue-700 hover:translate-x-2">
+          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-900 hover:translate-x-2">
             <NuxtLink :to="{ path: '/',hash:'#equipe'}">L'equipe</NuxtLink>
           </li>
-          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:border-b-2 hover:border-blue-700 hover:text-blue-700 hover:translate-x-2">
+          <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-900 hover:translate-x-2">
             <NuxtLink :to="{ path: '/',hash:'#contact'}">Contact</NuxtLink>
           </li>
         </ul>
@@ -55,16 +55,33 @@
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
-  a {
-    font-family: 'Chivo', sans-serif;
-  }
-  .fade-enter-active, .fade-leave-active {
+a {
+  font-family: 'Chivo', sans-serif;
+}
+.fade-enter-active, .fade-leave-active {
     transition: all .4s;
-  }
-  .fade-enter, .fade-leave-to {
+}
+.fade-enter, .fade-leave-to {
     opacity: 0;
     transform: translateY(-7px);
+}
+
+$color:#FFDF00;
+
+li, a {
+    background-image: linear-gradient(
+      transparent calc(65% - 5px),
+      darken($color, 1%) 5px,
+    );
+    background-size: 0;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.7s ease;
+
+  &:hover {
+      background-size: 100%;
   }
+}
 </style>

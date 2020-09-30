@@ -10,6 +10,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      colors: {
+        gold: '#FFDF00',
+      },
       spacing: {
         80: '20rem',
         108: '27rem'
