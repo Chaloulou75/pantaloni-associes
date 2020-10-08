@@ -49,7 +49,7 @@
 
     <div @click="showModal()" class="mobile-modal lg:hidden">
       <!-- <h2 class="py-2 text-2xl font-medium text-center text-gray-300 hover:text-gray-400">Marc Pantaloni</h2><br> -->
-      <h2 class="py-2 mb-2 text-5xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:hidden"><span> Gaëlle GOUGUET </span> </h2>
+      <h2 class="px-2 py-2 mb-2 text-4xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:hidden"><span> Gaëlle GOUGUET </span> </h2>
       <div class="py-2 line-1 lg:hidden"></div>
 
       <div class="w-full my-4 lg:hidden">

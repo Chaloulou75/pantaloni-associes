@@ -15,7 +15,7 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h5 class="text-2xl text-gray-800 text-indent"> <span>Magali </span></h5>
+                            <h5 class="text-2xl text-gray-800 text-indent"> <span>Magali GREINER </span></h5>
                         </div>
 
                         <div class="w-full h-full p-5 overflow-y-auto text-justify text-gray-700 modal-body">
@@ -52,7 +52,7 @@
 
     <div @click="showModal()" class="mobile-modal lg:hidden">
       <!-- <h2 class="py-2 text-2xl font-medium text-center text-gray-300 hover:text-gray-400">Marc Pantaloni</h2><br> -->
-      <h2 class="py-2 mb-2 text-5xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:hidden"><span>Magali</span> </h2>
+      <h2 class="px-2 py-2 mb-2 text-4xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:hidden"><span>Magali GREINER</span> </h2>
       <div class="py-2 line-1 lg:hidden"></div>
 
       <div class="w-full my-4 lg:hidden">
@@ -74,7 +74,7 @@
         Du fait de sa collaboration avec des cabinets spécialisés en droit des affaires et des personnes, Maître Magali GREINER a pu développer un savoir-faire particulier en droit de la responsabilité civile des professionnels du droit, en droit pénal, en droit du travail, et en matière de réparation du dommage corporel.
       </p>
       <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-        Egalement, soucieuse et impliquée dans la promotion du bien-être animal, Maître Magali GREINER est membre de la Commission Droit de l’Animal du Barreau de Paris, et de l’association Avocats & Droits de l’Animal.
+        Egalement, soucieuse et impliquée dans la promotion du bien-être animal, Maître Magali GREINER est membre de la Commission Droit de l’Animal du Barreau de Paris, et de l’association Avocats &amp; Droits de l’Animal.
       </p>
       <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
         Enfin, Maitre Magali GREINER préconise le recours à des modes alternatifs de résolution des litiges (négociation, médiation, conciliation) avant d’envisager un traitement judiciaire des dossiers.
