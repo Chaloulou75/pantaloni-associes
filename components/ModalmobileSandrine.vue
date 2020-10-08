@@ -1,5 +1,5 @@
 <template>
-<div class="relative">
+<div class="relative ">
   <div class="flex items-center justify-center w-full h-full">
     <transition name="fade">
 
@@ -15,15 +15,24 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h5 class="text-2xl text-gray-700"><span>Prénom Nom</span></h5>
+                            <h5 class="text-2xl text-gray-800 text-indent"> <span>Sandrine NIVET-ABDOUN</span></h5>
                         </div>
-                        <div class="w-full h-full p-5 overflow-y-auto modal-body">
-                            <p class="text-justify text-gray-700">
-                                cilis omnis nam illum maiores, porro velit deserunt neque.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, voluptates eveniet labore dolorum molestiae, modi saepe fugiat minima repudiandae repellendus obcaecati voluptatibus ab tenetur recusandae eius quos at maiores atque consectetur facilis! Nisi fuga
+
+                        <div class="w-full h-full p-5 overflow-y-auto text-justify text-gray-700 modal-body">
+                            <p class="py-1 tracking-wide text-indent">
+                                Titulaire d’un MASTER 2 Recherche, Sciences Sociales de la Justice, après un MASTER 1 de Droit des Affaires (Mention Justice et Procès).
+                            </p>
+                            <p class="py-1 tracking-wide text-indent">
+                                Juriste confirmée, elle a rejoint le Cabinet dès sa constitution.
+                            </p>
+                            <p class="py-1 tracking-wide text-indent">
+                                Elle assure une fonction de support et de coordination tant à l’égard des clients qu’auprès des juridictions.
+                            </p>
+                            <p class="py-1 tracking-wide text-indent">
+                                Elle est en outre en charge du bon suivi de l’exécution de l’ensemble des décisions judiciaires rendues.
                             </p>
                         </div>
-                        <div class="px-5 py-3 text-right modal-footer ">
+                        <div class="px-5 py-3 text-right modal-footer border0-t">
                             <button class="px-5 py-2 text-gray-800 cursor-pointer focus:outline-none" @click="showModal()">
                               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                             </button>
@@ -35,19 +44,30 @@
       </div>
     </transition>
 
-    <div @click="showModal()">
+    <div @click="showModal()" class="mobile-modal lg:hidden">
+      <!-- <h2 class="py-2 text-2xl font-medium text-center text-gray-300 hover:text-gray-400">Marc Pantaloni</h2><br> -->
+      <h2 class="py-2 mb-2 text-5xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:hidden"><span>Sandrine NIVET-ABDOUN</span> </h2>
+      <div class="py-2 line-1 lg:hidden"></div>
 
-      <h2 class="hidden py-2 mb-2 text-5xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-600 lg:block"> <span > Prénom Nom </span> </h2>
-      <div class="hidden py-2 line-1 lg:block"></div>
+      <div class="w-full my-4 lg:hidden">
+        <img
+          src="~assets/img/compress/livres2.jpg"
+          alt="Sandrine"
+          class="mx-auto sm:mx-0"
+        />
+      </div>
 
-      <p class="px-1 mx-auto text-lg tracking-wide lg:px-4">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo
-        blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis
-        repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero,
-        incidunt facere.<br />
-        Ut cillum cillum nostrud sunt id elit. Quis pariatur amet ipsum
-        exercitation cupidatat cupidatat dolore. Culpa cillum ipsum aliquip
-        aliqua consectetur est sunt commodo cillum est pariatur.
+      <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside lg:hidden">
+          <li class="py-2">Titulaire d’un MASTER 2 Recherche, Sciences Sociales de la Justice, après un MASTER 1 de Droit des Affaires (Mention Justice et Procès).</li>
+      </ul>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+        Juriste confirmée, elle a rejoint le Cabinet dès sa constitution.
+      </p>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+        Elle assure une fonction de support et de coordination tant à l’égard des clients qu’auprès des juridictions.
+      </p>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+        Elle est en outre en charge du bon suivi de l’exécution de l’ensemble des décisions judiciaires rendues.
       </p>
     </div>
   </div>
@@ -134,12 +154,12 @@ h2, h5 {
     display: inline;
     transition: 0.7s ease;
   }
+
   &:hover {
     span {
       background-size: 100%;
     }
   }
 }
-
 
 </style>

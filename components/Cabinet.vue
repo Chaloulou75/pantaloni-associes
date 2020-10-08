@@ -5,16 +5,21 @@
         <div class="w-full lg:w-1/2">
           <img src="~assets/img/compress/statue.jpg" alt="hero" class="px-3 mx-auto" />
         </div>
-        <div class="w-full px-4 lg:w-1/2">
-          <h3 class="py-2 text-2xl font-medium text-center">Un sous titre</h3>
-          <div class="line-1"></div>
-          <p class="py-4 mx-auto text-lg tracking-wide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero, incidunt facere.<br>
-          Ut cillum cillum nostrud sunt id elit. Quis pariatur amet ipsum exercitation cupidatat cupidatat dolore. Culpa cillum ipsum aliquip aliqua consectetur est sunt commodo cillum est pariatur. Eu voluptate culpa dolore cupidatat officia mollit Lorem. Eiusmod magna in est veniam adipisicing enim est adipisicing eu ea reprehenderit aliqua elit exercitation. Minim consectetur quis nostrud aute consectetur ut non veniam in culpa ad tempor. Velit qui officia commodo anim minim dolor nulla eu reprehenderit ea esse.</p>
-          <h3 class="py-2 text-2xl font-medium text-center">Un sous titre</h3>
-          <div class="line-1"></div>
-          <p class="py-4 mx-auto text-lg tracking-wide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero, incidunt facere.<br>
-          Ut cillum cillum nostrud sunt id elit. Quis pariatur amet ipsum exercitation cupidatat cupidatat dolore. Culpa cillum ipsum aliquip aliqua consectetur est sunt commodo cillum est pariatur. Eu voluptate culpa dolore cupidatat officia mollit Lorem. Eiusmod magna in est veniam adipisicing enim est adipisicing eu ea reprehenderit aliqua elit exercitation. Minim consectetur quis nostrud aute consectetur ut non veniam in culpa ad tempor. Velit qui officia commodo anim minim dolor nulla eu reprehenderit ea esse.</p>
+        <div class="w-full px-4 py-4 lg:w-1/2">
+          <div class="my-8 line-1"></div>
+          <!-- <h3 class="py-2 text-2xl font-medium text-center">Un sous titre</h3> -->
+          <p class="mx-auto text-lg tracking-wide whitespace-pre-wrap">
+          Depuis sa constitution, le Cabinet PANTALONI & ASSOCIES propose à ses clients un accompagnement sur mesure dans ses domaines d’interventions.
+
+          Le Cabinet dispose d’une compétence reconnue en matière pénale, en Droit de la construction, en Droit de la responsabilité et en Droit des assurances.
+
+          De taille humaine, croisant les compétences, le Cabinet assure un service personnalisé à ses clients qu’il conseille et accompagne en demande comme en défense dans le respect des règles professionnelles et notamment de confidentialité.
+
+          Sa clientèle est constituée d’Institutionnels, de grandes sociétés, moyennes et petites entreprises ainsi que de particuliers.
+          </p>
+          <div class="my-8 line-1"></div>
         </div>
+
       </div>
     </div>
 </template>

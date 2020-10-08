@@ -9,8 +9,6 @@
   </div>
 </template>
 
-<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-
 <script>
 import Hero from './../components/Hero.vue'
 import Cabinet from './../components/Cabinet.vue'
@@ -28,23 +26,6 @@ export default {
     Contact,
     Footer
   },
-  data() {
-      return {
-        title: 'Pantaloni & Associés | Avocats à la Cour'
-      }
-    },
-  head() {
-      return {
-        title: this.title,
-        meta: [
-          {
-            hid: 'Description ',
-            name: 'Description',
-            content: 'Pantaloni & Associés | Avocats à la Cour'
-          }
-        ]
-      }
-    }
 }
 </script>
 
