@@ -15,7 +15,7 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h5 class="text-2xl text-gray-800 text-indent"><span>Magali GREINER </span></h5>
+                            <h2 class="text-2xl text-gray-800 text-indent"><span>Magali GREINER </span></h2>
                         </div>
                         <div class="w-full h-full p-5 overflow-y-auto text-justify text-gray-700 modal-body">
                             <p class="py-1 tracking-wide text-indent">

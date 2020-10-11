@@ -15,7 +15,7 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h5 class="text-2xl text-gray-800 text-indent"><span>Gaëlle GOUGUET </span></h5>
+                            <h2 class="text-2xl text-gray-800 text-indent"><span>Gaëlle GOUGUET </span></h2>
                         </div>
                         <div class="w-full h-full p-5 overflow-y-auto text-justify text-gray-700 modal-body">
                             <p class="py-1 tracking-wide text-indent">
@@ -50,7 +50,8 @@
       <div class="hidden py-2 line-1 lg:block"></div>
 
       <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside">
-          <li class="py-2">Titulaire d’un Master II « carrières judiciaires », Gaëlle GOUGUET est avocate au Barreau de Paris depuis 2010.</li>
+          <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis 2010.</li>
+          <li class="py-2">Titulaire d’un Master II « carrières judiciaires ».</li>
       </ul>
       <ul class="px-8 py-2 mx-auto text-lg tracking-wide text-justify list-inside">
         <li class="py-2 text-indent">

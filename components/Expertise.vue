@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen" id="savoir-faire">
-      <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75" >-Savoir faire-</h2>
+      <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75" >Savoir faire</h2>
 
       <div class="flex flex-col-reverse items-center justify-between my-8 lg:flex-row">
         <div class="w-full px-4 lg:w-1/2">

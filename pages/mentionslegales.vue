@@ -14,7 +14,7 @@
           Forme juridique : Association d’Avocats à Responsabilité Professionnelle Individuelle<br />
           SIREN : <br />
           Responsable de la publication : <br />
-          Adresse : </p>
+          Adresse : 15 Rue Saussier Leroy 75017, Paris. France</p>
           <p>Conformément à la loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, nous vous informons que le site internet www.pantaloni-associes.com est la propriété de l’AARPI Pantaloni &amp; Associés. Le site internet www.pantaloni-associes.com est hébergé sur les matériels informatiques de la société Netlify, 2325 3rd Street, Suite 215; San Francisco, Californie 94107, États-Unis d’Amérique.<br> Le site www.pantaloni-associes.com est régi par le droit français ; les visiteurs ayant accès au site de l’étranger, doivent s’assurer du respect des lois localement applicables. Les mentions légales pouvant être modifiées à tout moment et sans préavis, nous vous engageons à les consulter régulièrement.</p>
         </div>
         <div class="mb-6 text-base">
@@ -32,8 +32,6 @@
             Pantaloni &amp; Associés s’efforce de mettre à jour le site mais ne garantit ni l’exactitude ni le caractère exhaustif des informations présentées sur ce site, quelles qu’elles soient. En cas de différence entre les informations concernant les produits, c’est l’emballage qui fait foi.<br />
             La reproduction ou présentation, intégrale ou partielle des pages, des données et de tout autre élément constitutif du site par quelque procédé ou support que ce soit, est interdite et constitue, sauf autorisation de l’éditeur, une contrefaçon.</p>
           </div>
-
-
 
           <h3 class="mb-6 font-semibold">Exclusion de garantie et de responsabilité</h3>
           <div class="mb-6">

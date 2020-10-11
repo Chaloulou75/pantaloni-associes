@@ -15,7 +15,7 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h5 class="text-2xl text-gray-800 text-indent"><span>Marc Pantaloni</span></h5>
+                            <h2 class="text-2xl text-gray-800 text-indent"><span>Marc Pantaloni</span></h2>
                         </div>
                         <div class="w-full h-full p-5 overflow-y-auto text-gray-700 modal-body">
                             <p class="py-1 tracking-wide text-indent">
@@ -49,8 +49,8 @@
 
       <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside">
           <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis janvier 1983</li>
-          <li class="py-2">Ancien chargé d’enseignement à l’Université Paris XI</li>
           <li class="py-2">Ancien Secrétaire de la Conférence au Barreau de Paris (1986/1987)</li>
+          <li class="py-2">Ancien chargé d’enseignement à l’Université Paris XI</li>
           <li class="py-2">DEA droit des affaires (Université Panthéon-Assas Paris II)</li>
       </ul>
       <ul class="px-8 py-2 mx-auto text-lg tracking-wide text-justify list-inside">

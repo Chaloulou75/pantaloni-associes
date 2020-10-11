@@ -15,7 +15,7 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h5 class="text-2xl text-gray-800 text-indent"> <span>Sandrine NIVET-ABDOUN</span></h5>
+                            <h2 class="text-2xl text-gray-800 text-indent"> <span>Sandrine NIVET-ABDOUN</span></h2>
                         </div>
 
                         <div class="w-full h-full p-5 overflow-y-auto text-justify text-gray-700 modal-body">
@@ -23,7 +23,7 @@
                                 Titulaire d’un MASTER 2 Recherche, Sciences Sociales de la Justice, après un MASTER 1 de Droit des Affaires (Mention Justice et Procès).
                             </p>
                             <p class="py-1 tracking-wide text-indent">
-                                Juriste confirmée, elle a rejoint le Cabinet dès sa constitution.
+                                Juriste confirmée, Sandrine NIVET-ABDOUN a rejoint le Cabinet dès sa constitution.
                             </p>
                             <p class="py-1 tracking-wide text-indent">
                                 Elle assure une fonction de support et de coordination tant à l’égard des clients qu’auprès des juridictions.
@@ -61,7 +61,7 @@
           <li class="py-2">Titulaire d’un MASTER 2 Recherche, Sciences Sociales de la Justice, après un MASTER 1 de Droit des Affaires (Mention Justice et Procès).</li>
       </ul>
       <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-        Juriste confirmée, elle a rejoint le Cabinet dès sa constitution.
+        Juriste confirmée, Sandrine NIVET-ABDOUN a rejoint le Cabinet dès sa constitution.
       </p>
       <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
         Elle assure une fonction de support et de coordination tant à l’égard des clients qu’auprès des juridictions.
