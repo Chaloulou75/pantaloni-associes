@@ -1,5 +1,5 @@
 <template>
-    <div class="hero">
+    <div class="hero" id="herotop">
       <Navigation />
       <div class="flex items-center justify-center h-screen mx-auto ">
         <h1 class="relative text-4xl font-semibold text-center transform -translate-y-24 md:text-5xl ">

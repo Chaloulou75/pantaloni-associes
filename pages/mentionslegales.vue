@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-200">
-    <nav class="relative flex justify-between w-full px-6 py-4 bg-gray-200 border-blue-700 border-t-14">
+    <nav class="relative flex justify-between w-full px-6 py-4 bg-gray-200 border-gold border-t-14">
       <a href="/" class="text-sm font-medium text-gray-900 transition duration-500 ease-in-out transform border-b border-gray-800 cursor-pointer hover:border-blue-700 lg:text-base hover:text-blue-700">
         Revenir à l'Acceuil
       </a>
