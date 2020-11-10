@@ -3,7 +3,7 @@
     <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75">L'équipe</h2>
 
     <div class="items-center justify-between my-8 lg:flex">
-      <div class="w-full ">
+      <div class="w-full" data-scroll>
         <img
           src="~assets/img/compress/livres.jpg"
           alt="equipe"
@@ -19,11 +19,11 @@
 </template>
 
 <script>
-
-import Marc from './Marc.vue'
-import Sandrine from './Sandrine.vue'
-import Gaelle from './Gaelle.vue'
-import Magali from './Magali.vue'
+import ScrollOut from "scroll-out"
+import Marc from './Marc/Marc.vue'
+import Sandrine from './Sandrine/Sandrine.vue'
+import Gaelle from './Gaelle/Gaelle.vue'
+import Magali from './Magali/Magali.vue'
 
 export default {
   components : {
@@ -31,11 +31,33 @@ export default {
     Sandrine,
     Gaelle,
     Magali
+  },
+  mounted() {
+    this.so = ScrollOut({
+      scope: this.$el,
+      threshold: .3
+    });
+  },
+  destroyed() {
+    this.so.teardown();
   }
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+
+[data-scroll] {
+  transition: all 1.7s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: scale(1);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: scale(0.85);
+}
 
 </style>
 

@@ -1,5 +1,5 @@
 <template>
-<div class="relative">
+<div class="relative ">
   <div class="flex items-center justify-center w-full h-full">
     <transition name="fade">
 
@@ -15,24 +15,24 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h2 class="text-2xl text-gray-800 text-indent"><span>Gaëlle GOUGUET </span></h2>
+                            <h2 class="text-2xl text-gray-800 text-indent"> <span>Sandrine NIVET-ABDOUN</span></h2>
                         </div>
+
                         <div class="w-full h-full p-5 overflow-y-auto text-justify text-gray-700 modal-body">
                             <p class="py-1 tracking-wide text-indent">
-                              Titulaire d’un Master II « carrières judiciaires », Gaëlle GOUGUET est avocate au Barreau de Paris depuis 2010.</p>
-                            <p class="py-1 tracking-wide text-indent">
-                              Après avoir exercé dans des cabinets généralistes avec une dominante en droit de la construction, Gaëlle GOUGUET a rejoint le cabinet PANTALONI pour y poursuivre son activité.</p>
-                            <p class="py-1 tracking-wide text-indent">
-                              Disposant d’une bonne expertise acquise dans le domaine de la construction, elle intervient, France entière et notamment dans le grand Ouest, pour le compte de l’ensemble des acteurs de cette branche (<span class="italic">entreprises – artisans - promoteurs-institutionnels</span>) tant en conseil que devant les juridictions.
+                                Titulaire d’un MASTER 2 Recherche, Sciences Sociales de la Justice, après un MASTER 1 de Droit des Affaires (Mention Justice et Procès).
                             </p>
                             <p class="py-1 tracking-wide text-indent">
-                              En outre, elle a développé une compétence accrue dans le contentieux assurantiel, au titre de la garantie décennale et de la responsabilité civile professionnelle, mais aussi de l’assurance Dommages Ouvrage.
+                                Juriste confirmée, Sandrine NIVET-ABDOUN a rejoint le Cabinet dès sa constitution.
                             </p>
                             <p class="py-1 tracking-wide text-indent">
-                              Son domaine d’intervention s’étend enfin aux problématiques plus généralistes du droit de la responsabilité touchant les particuliers.
+                                Elle assure une fonction de support et de coordination tant à l’égard des clients qu’auprès des juridictions.
+                            </p>
+                            <p class="py-1 tracking-wide text-indent">
+                                Elle est en outre en charge du bon suivi de l’exécution de l’ensemble des décisions judiciaires rendues.
                             </p>
                         </div>
-                        <div class="px-5 py-3 text-right modal-footer ">
+                        <div class="px-5 py-3 text-right modal-footer border0-t">
                             <button class="px-5 py-2 text-gray-800 cursor-pointer focus:outline-none" @click="showModal()">
                               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                             </button>
@@ -44,41 +44,54 @@
       </div>
     </transition>
 
-    <div @click="showModal()">
+    <div @click="showModal()" class="mobile-modal lg:hidden">
+      <!-- <h2 class="py-2 text-2xl font-medium text-center text-gray-300 hover:text-gray-400">Marc Pantaloni</h2><br> -->
+      <h2 class="px-2 py-2 mb-2 text-4xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:hidden"><span>Sandrine NIVET-ABDOUN</span> </h2>
+      <div class="py-2 line-1 lg:hidden"></div>
 
-      <h2 class="hidden py-2 mb-2 text-5xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:block"> <span > Gaëlle GOUGUET </span> </h2>
-      <div class="hidden py-2 line-1 lg:block"></div>
+      <div class="w-full my-4 lg:hidden" data-scroll>
+        <img
+          src="~assets/img/compress/livres2.jpg"
+          alt="Sandrine"
+          class="mx-auto sm:mx-0"
+        />
+      </div>
 
-      <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside">
-          <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis 2010.</li>
-          <li class="py-2">Titulaire d’un Master II « carrières judiciaires ».</li>
-      </ul>
-      <ul class="px-8 py-2 mx-auto text-lg tracking-wide text-justify list-inside">
-        <li class="py-2 text-indent">
-        Après avoir exercé dans des cabinets généralistes avec une dominante en droit de la construction, Gaëlle GOUGUET a rejoint le cabinet PANTALONI pour y poursuivre son activité.
-        </li>
-        <li class="py-2 text-indent">
-        Disposant d’une bonne expertise acquise dans le domaine de la construction, elle intervient, France entière et notamment dans le grand Ouest, pour le compte de l’ensemble des acteurs de cette branche (<span class="italic">entreprises – artisans - promoteurs-institutionnels</span>) tant en conseil que devant les juridictions.
-        </li>
-        <li class="py-2 text-indent">
-        En outre, elle a développé une compétence accrue dans le contentieux assurantiel, au titre de la garantie décennale et de la responsabilité civile professionnelle, mais aussi de l’assurance Dommages Ouvrage.
-        </li>
-        <li class="py-2 text-indent">
-        Son domaine d’intervention s’étend enfin aux problématiques plus généralistes du droit de la responsabilité touchant les particuliers.
-        </li>
-      </ul>
-      <div class="hidden my-4 line-1 lg:block"></div>
+      <div data-scroll>
+        <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside lg:hidden">
+            <li class="py-2">Titulaire d’un MASTER 2 Recherche, Sciences Sociales de la Justice, après un MASTER 1 de Droit des Affaires (Mention Justice et Procès).</li>
+        </ul>
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+          Juriste confirmée, Sandrine NIVET-ABDOUN a rejoint le Cabinet dès sa constitution.
+        </p>
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+          Elle assure une fonction de support et de coordination tant à l’égard des clients qu’auprès des juridictions.
+        </p>
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+          Elle est en outre en charge du bon suivi de l’exécution de l’ensemble des décisions judiciaires rendues.
+        </p>
+      </div>
     </div>
   </div>
 </div>
 </template>
 
 <script>
+import ScrollOut from "scroll-out"
 export default {
   data(){
     return{
       show_modal: false,
     }
+  },
+  mounted() {
+    this.so = ScrollOut({
+      scope: this.$el,
+      threshold: .3
+    });
+  },
+  destroyed() {
+    this.so.teardown();
   },
   methods:{
     showModal(){
@@ -96,6 +109,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+[data-scroll] {
+  transition: all 1.2s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(-120px);
+}
 
 .modal-body{
   max-height: 500px;
@@ -153,12 +179,12 @@ h2, h5 {
     display: inline;
     transition: 0.7s ease;
   }
+
   &:hover {
     span {
       background-size: 100%;
     }
   }
 }
-
 
 </style>

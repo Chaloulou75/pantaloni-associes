@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen bg-gray-800" id="contact">
+    <div class="h-screen bg-gray-800" id="contact" data-scroll>
       <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center text-gray-100 bg-gray-800 opacity-75">Contact</h2>
 
       <div class="justify-around lg:flex">
@@ -39,8 +39,37 @@
 </template>
 
 <script>
+import ScrollOut from "scroll-out"
+
 export default {
+
+  mounted() {
+    this.so = ScrollOut({
+      scope: this.$el,
+      threshold: .2
+    });
+  },
+  destroyed() {
+    this.so.teardown();
+  }
 
 }
 </script>
+
+<style scoped>
+
+[data-scroll] {
+  transition: all 1.5s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateY(300px);
+}
+
+</style>
 

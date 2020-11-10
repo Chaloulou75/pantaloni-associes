@@ -15,24 +15,27 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h2 class="text-2xl text-gray-800 text-indent"> <span> Gaëlle GOUGUET </span></h2>
+                            <h2 class="text-2xl text-gray-800 text-indent"> <span>Magali GREINER </span></h2>
                         </div>
 
                         <div class="w-full h-full p-5 overflow-y-auto text-justify text-gray-700 modal-body">
                             <p class="py-1 tracking-wide text-indent">
-                                Titulaire d’un Master II « carrières judiciaires », Gaëlle GOUGUET est avocate au Barreau de Paris depuis 2010.
+                                Inscrit au Barreau de Paris depuis janvier 2014.
                             </p>
                             <p class="py-1 tracking-wide text-indent">
-                                Après avoir exercé dans des cabinets généralistes avec une dominante en droit de la construction, Gaëlle GOUGUET a rejoint le cabinet PANTALONI pour y poursuivre son activité.
+                                Master Droit des Affaires, Droit de l’innovation, de la communication et de la Culture (Université de Sceaux).
                             </p>
                             <p class="py-1 tracking-wide text-indent">
-                                Disposant d’une bonne expertise acquise dans le domaine de la construction, elle intervient, France entière et notamment dans le grand Ouest, pour le compte de l’ensemble des acteurs de cette branche (<span class="italic">entreprises – artisans - promoteurs-institutionnels</span>) tant en conseil que devant les juridictions.
+                                Maitre Magali GREINER, spécialisée en propriété intellectuelle et nouvelles technologies, dispose aujourd’hui d’une expertise particulière en droit des marques, dessins et modèles et en droit d’auteur.
                             </p>
                             <p class="py-1 tracking-wide text-indent">
-                                En outre, elle a développé une compétence accrue dans le contentieux assurantiel, au titre de la garantie décennale et de la responsabilité civile professionnelle, mais aussi de l’assurance Dommages Ouvrage.
+                                Du fait de sa collaboration avec des cabinets spécialisés en droit des affaires et des personnes, Maître Magali GREINER a pu développer un savoir-faire particulier en droit de la responsabilité civile des professionnels du droit, en droit pénal, en droit du travail, et en matière de réparation du dommage corporel.
                             </p>
                             <p class="py-1 tracking-wide text-indent">
-                                Son domaine d’intervention s’étend enfin aux problématiques plus généralistes du droit de la responsabilité touchant les particuliers.
+                              Egalement, soucieuse et impliquée dans la promotion du bien-être animal, Maître Magali GREINER est membre de la Commission Droit de l’Animal du Barreau de Paris, et de l’association Avocats & Droits de l’Animal.
+                            </p>
+                            <p class="py-1 tracking-wide text-indent">
+                              Enfin, Maitre Magali GREINER préconise le recours à des modes alternatifs de résolution des litiges (négociation, médiation, conciliation) avant d’envisager un traitement judiciaire des dossiers.
                             </p>
                         </div>
                         <div class="px-5 py-3 text-right modal-footer border0-t">
@@ -49,44 +52,57 @@
 
     <div @click="showModal()" class="mobile-modal lg:hidden">
       <!-- <h2 class="py-2 text-2xl font-medium text-center text-gray-300 hover:text-gray-400">Marc Pantaloni</h2><br> -->
-      <h2 class="px-2 py-2 mb-2 text-4xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:hidden"><span> Gaëlle GOUGUET </span> </h2>
+      <h2 class="px-2 py-2 mb-2 text-4xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:hidden"><span>Magali GREINER</span> </h2>
       <div class="py-2 line-1 lg:hidden"></div>
 
-      <div class="w-full my-4 lg:hidden">
+      <div class="w-full my-4 lg:hidden" data-scroll>
         <img
           src="~assets/img/compress/livres2.jpg"
-          alt=" Gaëlle"
+          alt="Magali"
           class="mx-auto sm:mx-0"
         />
       </div>
 
-      <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside lg:hidden">
-          <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis 2010.</li>
-          <li class="py-2">Titulaire d’un Master II « carrières judiciaires ».</li>
-      </ul>
-      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-        Après avoir exercé dans des cabinets généralistes avec une dominante en droit de la construction, Gaëlle GOUGUET a rejoint le cabinet PANTALONI pour y poursuivre son activité.
-      </p>
-      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-        Disposant d’une bonne expertise acquise dans le domaine de la construction, elle intervient, France entière et notamment dans le grand Ouest, pour le compte de l’ensemble des acteurs de cette branche (<span class="italic">entreprises – artisans - promoteurs-institutionnels</span>) tant en conseil que devant les juridictions.
-      </p>
-      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-        En outre, elle a développé une compétence accrue dans le contentieux assurantiel, au titre de la garantie décennale et de la responsabilité civile professionnelle, mais aussi de l’assurance Dommages Ouvrage.
-      </p>
-      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-        Son domaine d’intervention s’étend enfin aux problématiques plus généralistes du droit de la responsabilité touchant les particuliers.
-      </p>
+      <div data-scroll>
+
+        <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside lg:hidden">
+            <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis janvier 2014.</li>
+            <li class="py-2">Master Droit des Affaires, Droit de l’innovation, de la communication et de la Culture (Université de Sceaux).</li>
+        </ul>
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+          Maitre Magali GREINER, spécialisée en propriété intellectuelle et nouvelles technologies, dispose aujourd’hui d’une expertise particulière en droit des marques, dessins et modèles et en droit d’auteur.
+        </p>
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+          Du fait de sa collaboration avec des cabinets spécialisés en droit des affaires et des personnes, Maître Magali GREINER a pu développer un savoir-faire particulier en droit de la responsabilité civile des professionnels du droit, en droit pénal, en droit du travail, et en matière de réparation du dommage corporel.
+        </p>
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+          Egalement, soucieuse et impliquée dans la promotion du bien-être animal, Maître Magali GREINER est membre de la Commission Droit de l’Animal du Barreau de Paris, et de l’association Avocats &amp; Droits de l’Animal.
+        </p>
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+          Enfin, Maitre Magali GREINER préconise le recours à des modes alternatifs de résolution des litiges (négociation, médiation, conciliation) avant d’envisager un traitement judiciaire des dossiers.
+        </p>
+      </div>
     </div>
   </div>
 </div>
 </template>
 
 <script>
+import ScrollOut from "scroll-out"
 export default {
   data(){
     return{
       show_modal: false,
     }
+  },
+  mounted() {
+    this.so = ScrollOut({
+      scope: this.$el,
+      threshold: .3
+    });
+  },
+  destroyed() {
+    this.so.teardown();
   },
   methods:{
     showModal(){
@@ -104,6 +120,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+[data-scroll] {
+  transition: all 1.2s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(-120px);
+}
 
 .modal-body{
   max-height: 500px;

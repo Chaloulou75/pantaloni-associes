@@ -23,7 +23,7 @@
 <script>
 import Hero from './../components/Hero.vue'
 import Cabinet from './../components/Cabinet.vue'
-import Equipe from './../components/Equipe.vue'
+import Equipe from './../components/Equipe/Equipe.vue'
 import Contact from './../components/Contact.vue'
 import Footer from './../components/Footer.vue'
 import ScrollLink from './../components/ScrollLink.vue'

@@ -13,6 +13,7 @@
     "core-js": "^3.6.5",
     "in-viewport": "^3.6.0",
     "nuxt": "^2.14.5",
+    "scroll-out": "^2.2.12",
     "vanilla-back-to-top": "^7.2.1",
     "vue-scrollto": "^2.18.2"
   },

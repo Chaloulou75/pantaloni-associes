@@ -15,20 +15,27 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h2 class="text-2xl text-gray-800 text-indent"><span>Sandrine NIVET-ABDOUN</span></h2>
+                            <h2 class="text-2xl text-gray-800 text-indent"><span>Magali GREINER </span></h2>
                         </div>
                         <div class="w-full h-full p-5 overflow-y-auto text-justify text-gray-700 modal-body">
                             <p class="py-1 tracking-wide text-indent">
-                                Titulaire d’un MASTER 2 Recherche, Sciences Sociales de la Justice, après un MASTER 1 de Droit des Affaires (Mention Justice et Procès).
+                              Inscrit au Barreau de Paris depuis janvier 2014.
                             </p>
                             <p class="py-1 tracking-wide text-indent">
-                                Juriste confirmée, Sandrine NIVET-ABDOUN a rejoint le Cabinet dès sa constitution.
+                              Master Droit des Affaires, Droit de l’innovation, de la communication et de la Culture (Université de Sceaux).
                             </p>
                             <p class="py-1 tracking-wide text-indent">
-                                Elle assure une fonction de support et de coordination tant à l’égard des clients qu’auprès des juridictions.
+                              Maitre Magali GREINER, spécialisée en propriété intellectuelle et nouvelles technologies, dispose aujourd’hui d’une expertise particulière en droit des marques, dessins et modèles et en droit d’auteur.
+                            </p>
+
+                            <p class="py-1 tracking-wide text-indent">
+                              Du fait de sa collaboration avec des cabinets spécialisés en droit des affaires et des personnes, Maître Magali GREINER a pu développer un savoir-faire particulier en droit de la responsabilité civile des professionnels du droit, en droit pénal, en droit du travail, et en matière de réparation du dommage corporel.
                             </p>
                             <p class="py-1 tracking-wide text-indent">
-                                Elle est en outre en charge du bon suivi de l’exécution de l’ensemble des décisions judiciaires rendues.
+                              Egalement, soucieuse et impliquée dans la promotion du bien-être animal, Maître Magali GREINER est membre de la Commission Droit de l’Animal du Barreau de Paris, et de l’association Avocats & Droits de l’Animal.
+                            </p>
+                            <p class="py-1 tracking-wide text-indent">
+                              Enfin, Maitre Magali GREINER préconise le recours à des modes alternatifs de résolution des litiges (négociation, médiation, conciliation) avant d’envisager un traitement judiciaire des dossiers.
                             </p>
                         </div>
                         <div class="px-5 py-3 text-right modal-footer ">
@@ -43,23 +50,27 @@
       </div>
     </transition>
 
-    <div @click="showModal()">
+    <div @click="showModal()" data-scroll>
 
-      <h2 class="hidden py-2 mb-2 text-5xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:block"> <span >Sandrine NIVET-ABDOUN</span> </h2>
+      <h2 class="hidden py-2 mb-2 text-5xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:block"> <span >Magali GREINER</span> </h2>
       <div class="hidden py-2 line-1 lg:block"></div>
 
       <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide list-disc list-inside">
-          <li class="py-2">Titulaire d’un MASTER 2 Recherche, Sciences Sociales de la Justice, après un MASTER 1 de Droit des Affaires (Mention Justice et Procès).</li>
+          <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis janvier 2014.</li>
+          <li class="py-2">Master Droit des Affaires, Droit de l’innovation, de la communication et de la Culture (Université de Sceaux).</li>
       </ul>
       <ul class="px-8 py-2 mx-auto text-lg tracking-wide list-inside">
         <li class="py-2 text-indent">
-        Juriste confirmée, Sandrine NIVET-ABDOUN a rejoint le Cabinet dès sa constitution.
+        Maitre Magali GREINER, spécialisée en propriété intellectuelle et nouvelles technologies, dispose aujourd’hui d’une expertise particulière en droit des marques, dessins et modèles et en droit d’auteur.
         </li>
         <li class="py-2 text-indent">
-        Elle assure une fonction de support et de coordination tant à l’égard des clients qu’auprès des juridictions.
+        Du fait de sa collaboration avec des cabinets spécialisés en droit des affaires et des personnes, Maître Magali GREINER a pu développer un savoir-faire particulier en droit de la responsabilité civile des professionnels du droit, en droit pénal, en droit du travail, et en matière de réparation du dommage corporel.
         </li>
         <li class="py-2 text-indent">
-        Elle est en outre en charge du bon suivi de l’exécution de l’ensemble des décisions judiciaires rendues.
+        Egalement, soucieuse et impliquée dans la promotion du bien-être animal, Maître Magali GREINER est membre de la Commission Droit de l’Animal du Barreau de Paris, et de l’association Avocats &amp; Droits de l’Animal.
+        </li>
+        <li class="py-2 text-indent">
+        Enfin, Maitre Magali GREINER préconise le recours à des modes alternatifs de résolution des litiges (négociation, médiation, conciliation) avant d’envisager un traitement judiciaire des dossiers.
         </li>
       </ul>
       <div class="hidden my-4 line-1 lg:block"></div>
@@ -69,11 +80,21 @@
 </template>
 
 <script>
+import ScrollOut from "scroll-out";
 export default {
   data(){
     return{
       show_modal: false,
     }
+  },
+  mounted() {
+    this.so = ScrollOut({
+      scope: this.$el,
+      threshold: .3
+    });
+  },
+  destroyed() {
+    this.so.teardown();
   },
   methods:{
     showModal(){
@@ -91,6 +112,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+[data-scroll] {
+  transition: all 1.5s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(150px);
+}
 
 .modal-body{
   max-height: 500px;

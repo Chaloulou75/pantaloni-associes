@@ -2,10 +2,10 @@
     <div class="min-h-screen" id="cabinet">
     <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75" > Le cabinet </h2>
       <div class="items-center justify-between my-8 lg:flex">
-        <div class="w-full lg:w-1/2">
+        <div class="w-full lg:w-1/2" data-scroll>
           <img src="~assets/img/compress/statue.jpg" alt="hero" class="px-3 mx-auto" />
         </div>
-        <div class="w-full px-4 py-4 lg:w-1/2">
+        <div class="w-full px-4 py-4 lg:w-1/2" data-scroll>
           <div class="my-8 line-1"></div>
           <!-- <h3 class="py-2 text-2xl font-medium text-center">Un sous titre</h3> -->
           <p class="py-2 mx-auto text-xl tracking-wide text-justify text-indent">
@@ -28,11 +28,35 @@
 </template>
 
 <script>
+import ScrollOut from "scroll-out"
+
 export default {
+  mounted() {
+    this.so = ScrollOut({
+      scope: this.$el,
+      threshold: .3
+    });
+  },
+  destroyed() {
+    this.so.teardown();
+  }
 
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+
+[data-scroll] {
+  transition: all 1.7s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: scale(1);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: scale(0.85);
+}
 </style>
 
