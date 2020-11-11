@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Pantaloni & Associés | Avocats à la Cour' }
+      { hid: 'description', name: 'description', content: 'Pantaloni & Associés | Avocats à la Cour. Droit de la construction. Droit de la responsabilité. Droit des assurances' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/P.svg' },
