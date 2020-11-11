@@ -1,5 +1,5 @@
 <template>
-    <div class="h-auto" id="cabinet">
+    <div class="min-h-full" id="cabinet">
       <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75" > Le cabinet </h2>
       <div class="items-center justify-between my-8 lg:flex">
         <div class="w-full lg:w-1/2" data-scroll>

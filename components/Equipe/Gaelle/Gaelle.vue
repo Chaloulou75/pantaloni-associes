@@ -1,5 +1,5 @@
 <template>
-  <div class="h-auto my-24" id="GaelleGouguet">
+  <div class="h-auto my-24 overflow-hidden" id="GaelleGouguet">
 
     <modalmobile-gaelle />
 
