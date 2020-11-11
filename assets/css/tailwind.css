@@ -10,7 +10,6 @@
 
 html, body{
   font-family: 'Cormorant Garamond', 'font-sans', sans-serif;
-  overflow-x: hidden;
 }
 
 nav .nuxt-link-exact-active {

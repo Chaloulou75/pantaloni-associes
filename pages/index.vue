@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden">
+  <div class="relative min-h-screen overflow-hidden bg-gray-100">
       <Hero />
       <Cabinet />
       <!-- <Expertise /> -->

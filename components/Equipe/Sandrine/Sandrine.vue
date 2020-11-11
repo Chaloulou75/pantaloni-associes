@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen my-24" id="SandrineNivet-Abdoun">
+  <div class="h-auto my-24" id="SandrineNivet-Abdoun">
 
     <modalmobile-sandrine />
 

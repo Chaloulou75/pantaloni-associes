@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen bg-gray-800" id="contact" data-scroll>
+    <div class="min-h-screen bg-gray-800" id="contact" data-scroll>
       <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center text-gray-100 bg-gray-800 opacity-75">Contact</h2>
 
       <div class="justify-around lg:flex">

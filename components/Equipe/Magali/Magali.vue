@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen my-24" id="MagaliGreiner">
+  <div class="h-auto my-24" id="MagaliGreiner">
 
     <modalmobile-magali />
 

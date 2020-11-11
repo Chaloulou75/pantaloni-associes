@@ -2,7 +2,7 @@
     <div class="hero" id="herotop">
       <Navigation />
       <div class="flex items-center justify-center h-screen mx-auto ">
-        <h1 class="relative text-4xl font-semibold text-center transform -translate-y-24 md:text-5xl ">
+        <h1 class="relative text-4xl font-semibold text-center transform -translate-y-24 md:text-5xl">
           <span>Pantaloni &amp; Associés</span>
           <span id="subtitulo" class="block px-4 mt-4 font-normal text-center text-gray-800">
             - Avocats à la Cour -
