@@ -1,5 +1,5 @@
 <template>
-  <div class="h-auto my-8" id="SandrineNivet-Abdoun">
+  <div class="min-h-screen my-24" id="SandrineNivet-Abdoun">
 
     <modalmobile-sandrine />
 
@@ -7,6 +7,7 @@
 
       <div class="w-full my-4 lg:w-1/2" data-scroll>
         <img
+          loading="lazy"
           src="~assets/img/compress/livres2.jpg"
           alt="Sandrine"
           class="mx-auto sm:mx-0"

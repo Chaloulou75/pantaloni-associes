@@ -57,20 +57,18 @@
         />
       </div>
 
-      <div data-scroll>
-        <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside lg:hidden">
-            <li class="py-2">Titulaire d’un MASTER 2 Recherche, Sciences Sociales de la Justice, après un MASTER 1 de Droit des Affaires (Mention Justice et Procès).</li>
-        </ul>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-          Juriste confirmée, Sandrine NIVET-ABDOUN a rejoint le Cabinet dès sa constitution.
-        </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-          Elle assure une fonction de support et de coordination tant à l’égard des clients qu’auprès des juridictions.
-        </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-          Elle est en outre en charge du bon suivi de l’exécution de l’ensemble des décisions judiciaires rendues.
-        </p>
-      </div>
+      <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside lg:hidden" data-scroll>
+          <li class="py-2">Titulaire d’un MASTER 2 Recherche, Sciences Sociales de la Justice, après un MASTER 1 de Droit des Affaires (Mention Justice et Procès).</li>
+      </ul>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll>
+        Juriste confirmée, Sandrine NIVET-ABDOUN a rejoint le Cabinet dès sa constitution.
+      </p>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll>
+        Elle assure une fonction de support et de coordination tant à l’égard des clients qu’auprès des juridictions.
+      </p>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll >
+        Elle est en outre en charge du bon suivi de l’exécution de l’ensemble des décisions judiciaires rendues.
+      </p>
     </div>
   </div>
 </div>
@@ -87,7 +85,7 @@ export default {
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,
-      threshold: .3
+      threshold: .2
     });
   },
   destroyed() {
@@ -111,7 +109,7 @@ export default {
 <style lang="scss" scoped>
 
 [data-scroll] {
-  transition: all 1.2s;
+  transition: all 1.5s;
 }
 
 [data-scroll="in"] {
@@ -120,7 +118,7 @@ export default {
 }
 [data-scroll="out"] {
   opacity: 0;
-  transform: translateX(-120px);
+  transform: translateX(-50px);
 }
 
 .modal-body{

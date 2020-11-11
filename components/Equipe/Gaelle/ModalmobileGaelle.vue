@@ -59,24 +59,24 @@
           class="mx-auto sm:mx-0"
         />
       </div>
-      <div data-scroll>
-        <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside lg:hidden">
-            <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis 2010.</li>
-            <li class="py-2">Titulaire d’un Master II « carrières judiciaires ».</li>
-        </ul>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-          Après avoir exercé dans des cabinets généralistes avec une dominante en droit de la construction, Gaëlle GOUGUET a rejoint le cabinet PANTALONI pour y poursuivre son activité.
-        </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-          Disposant d’une bonne expertise acquise dans le domaine de la construction, elle intervient, France entière et notamment dans le grand Ouest, pour le compte de l’ensemble des acteurs de cette branche (<span class="italic">entreprises – artisans - promoteurs-institutionnels</span>) tant en conseil que devant les juridictions.
-        </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-          En outre, elle a développé une compétence accrue dans le contentieux assurantiel, au titre de la garantie décennale et de la responsabilité civile professionnelle, mais aussi de l’assurance Dommages Ouvrage.
-        </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-          Son domaine d’intervention s’étend enfin aux problématiques plus généralistes du droit de la responsabilité touchant les particuliers.
-        </p>
-      </div>
+
+      <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside lg:hidden" data-scroll>
+          <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis 2010.</li>
+          <li class="py-2">Titulaire d’un Master II « carrières judiciaires ».</li>
+      </ul>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll >
+        Après avoir exercé dans des cabinets généralistes avec une dominante en droit de la construction, Gaëlle GOUGUET a rejoint le cabinet PANTALONI pour y poursuivre son activité.
+      </p>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll >
+        Disposant d’une bonne expertise acquise dans le domaine de la construction, elle intervient, France entière et notamment dans le grand Ouest, pour le compte de l’ensemble des acteurs de cette branche (<span class="italic">entreprises – artisans - promoteurs-institutionnels</span>) tant en conseil que devant les juridictions.
+      </p>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll>
+        En outre, elle a développé une compétence accrue dans le contentieux assurantiel, au titre de la garantie décennale et de la responsabilité civile professionnelle, mais aussi de l’assurance Dommages Ouvrage.
+      </p>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll>
+        Son domaine d’intervention s’étend enfin aux problématiques plus généralistes du droit de la responsabilité touchant les particuliers.
+      </p>
+
     </div>
   </div>
 </div>
@@ -94,7 +94,7 @@ export default {
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,
-      threshold: .3
+      threshold: .2
     });
   },
   destroyed() {
@@ -118,7 +118,7 @@ export default {
 <style lang="scss" scoped>
 
 [data-scroll] {
-  transition: all 1.2s;
+  transition: all 1.5s;
 }
 
 [data-scroll="in"] {
@@ -127,7 +127,7 @@ export default {
 }
 [data-scroll="out"] {
   opacity: 0;
-  transform: translateX(120px);
+  transform: translateX(50px);
 }
 
 .modal-body{

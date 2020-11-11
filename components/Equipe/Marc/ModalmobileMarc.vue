@@ -48,7 +48,7 @@
       <h2 class="px-2 py-2 mb-2 text-4xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:hidden"><span>Marc Pantaloni</span> </h2>
       <div class="py-2 line-1 lg:hidden"></div>
 
-      <div class="w-full my-4 lg:hidden" data-scroll>
+      <div class="w-full my-4 lg:hidden" data-scroll >
         <img
           src="~assets/img/compress/livres2.jpg"
           alt="Marc"
@@ -56,26 +56,24 @@
         />
       </div>
 
-      <div data-scroll>
-        <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide list-disc list-inside lg:hidden">
+        <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide list-disc list-inside lg:hidden" data-scroll>
             <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis janvier 1983</li>
             <li class="py-2">Ancien Secrétaire de la Conférence au Barreau de Paris (1986/1987)</li>
             <li class="py-2">Ancien chargé d’enseignement à l’Université Paris XI</li>
             <li class="py-2">DEA droit des affaires (Université Panthéon-Assas Paris II)</li>
         </ul>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll >
           Associé au sein du Cabinet RONSSERAY TOURNOIS & ASSOCIES, puis membre fondateur du Cabinet SELNET PANTALONI FISCHER, Marc PANTALONI a constitué une équipe dédiée au service de clients auxquels sont apportés tant la formation à raison de séminaires dédiés que le conseil, l’assistance pré-contentieuse et contentieuse qui leur est nécessaire.
         </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll >
           En matière pénale, Marc PANTALONI est intervenu et intervient dans de nombreux dossiers à forts enjeux tant en droit pénal des affaires et financiers qu’en droit pénal général et du travail.
         </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll >
           Son activité se déploie en outre dans les domaines de la construction et de l’immobilier où il intervient aux côtés d’entreprises de BTP ou de leurs assureurs.
         </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll >
           Enfin, il assure dans le cadre de leurs responsabilités civiles professionnelles et/ou contractuelles la défense d’agents immobiliers et des professionnels du droit, notamment notaires, experts judiciaires…
         </p>
-      </div>
     </div>
   </div>
 </div>
@@ -93,7 +91,7 @@ export default {
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,
-      threshold: .3
+      threshold: .2
     });
   },
   destroyed() {
@@ -117,7 +115,7 @@ export default {
 <style lang="scss" scoped>
 
 [data-scroll] {
-  transition: all 1.2s;
+  transition: all 1.5s;
 }
 
 [data-scroll="in"] {
@@ -126,7 +124,7 @@ export default {
 }
 [data-scroll="out"] {
   opacity: 0;
-  transform: translateX(120px);
+  transform: translateX(50px);
 }
 
 .modal-body{

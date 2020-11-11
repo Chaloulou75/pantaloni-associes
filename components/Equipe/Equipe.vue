@@ -5,6 +5,7 @@
     <div class="items-center justify-between my-8 lg:flex">
       <div class="w-full" data-scroll>
         <img
+          loading="lazy"
           src="~assets/img/compress/livres.jpg"
           alt="equipe"
           class="mx-auto sm:mx-0"

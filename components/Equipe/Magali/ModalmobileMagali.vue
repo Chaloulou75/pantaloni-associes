@@ -63,25 +63,22 @@
         />
       </div>
 
-      <div data-scroll>
-
-        <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside lg:hidden">
-            <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis janvier 2014.</li>
-            <li class="py-2">Master Droit des Affaires, Droit de l’innovation, de la communication et de la Culture (Université de Sceaux).</li>
-        </ul>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-          Maitre Magali GREINER, spécialisée en propriété intellectuelle et nouvelles technologies, dispose aujourd’hui d’une expertise particulière en droit des marques, dessins et modèles et en droit d’auteur.
-        </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-          Du fait de sa collaboration avec des cabinets spécialisés en droit des affaires et des personnes, Maître Magali GREINER a pu développer un savoir-faire particulier en droit de la responsabilité civile des professionnels du droit, en droit pénal, en droit du travail, et en matière de réparation du dommage corporel.
-        </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
-          Egalement, soucieuse et impliquée dans la promotion du bien-être animal, Maître Magali GREINER est membre de la Commission Droit de l’Animal du Barreau de Paris, et de l’association Avocats &amp; Droits de l’Animal.
-        </p>
-        <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent">
+      <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside lg:hidden" data-scroll>
+          <li class="py-2 not-italic">Inscrit au Barreau de Paris depuis janvier 2014.</li>
+          <li class="py-2">Master Droit des Affaires, Droit de l’innovation, de la communication et de la Culture (Université de Sceaux).</li>
+      </ul>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll>
+        Maitre Magali GREINER, spécialisée en propriété intellectuelle et nouvelles technologies, dispose aujourd’hui d’une expertise particulière en droit des marques, dessins et modèles et en droit d’auteur.
+      </p>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll>
+        Du fait de sa collaboration avec des cabinets spécialisés en droit des affaires et des personnes, Maître Magali GREINER a pu développer un savoir-faire particulier en droit de la responsabilité civile des professionnels du droit, en droit pénal, en droit du travail, et en matière de réparation du dommage corporel.
+      </p>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll>
+        Egalement, soucieuse et impliquée dans la promotion du bien-être animal, Maître Magali GREINER est membre de la Commission Droit de l’Animal du Barreau de Paris, et de l’association Avocats &amp; Droits de l’Animal.
+      </p>
+      <p class="px-4 py-3 mx-auto text-lg tracking-wide text-justify lg:hidden text-indent" data-scroll>
           Enfin, Maitre Magali GREINER préconise le recours à des modes alternatifs de résolution des litiges (négociation, médiation, conciliation) avant d’envisager un traitement judiciaire des dossiers.
-        </p>
-      </div>
+      </p>
     </div>
   </div>
 </div>
@@ -98,7 +95,7 @@ export default {
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,
-      threshold: .3
+      threshold: .2
     });
   },
   destroyed() {
@@ -122,7 +119,7 @@ export default {
 <style lang="scss" scoped>
 
 [data-scroll] {
-  transition: all 1.2s;
+  transition: all 1.5s;
 }
 
 [data-scroll="in"] {
@@ -131,7 +128,7 @@ export default {
 }
 [data-scroll="out"] {
   opacity: 0;
-  transform: translateX(-120px);
+  transform: translateX(-50px);
 }
 
 .modal-body{
