@@ -13,8 +13,8 @@
       </div>
     </div>
     <marc />
-    <magali />
     <gaelle />
+    <magali />
     <sandrine />
   </div>
 </template>

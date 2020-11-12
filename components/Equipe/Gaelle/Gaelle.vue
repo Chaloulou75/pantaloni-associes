@@ -3,7 +3,7 @@
 
     <modalmobile-gaelle />
 
-    <div class="hidden lg:flex-row-reverse lg:items-center lg:justify-between lg:flex">
+    <div class="hidden lg:flex-row lg:items-center lg:justify-between lg:flex">
 
       <div class="w-full my-4 lg:w-1/2" data-scroll>
         <img
@@ -57,7 +57,7 @@ export default {
 }
 [data-scroll="out"] {
   opacity: 0;
-  transform: translateX(150px);
+  transform: translateX(-150px);
 }
 
 </style>

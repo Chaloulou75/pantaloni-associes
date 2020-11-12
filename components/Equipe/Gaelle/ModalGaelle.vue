@@ -117,7 +117,7 @@ export default {
 }
 [data-scroll="out"] {
   opacity: 0;
-  transform: translateX(-150px);
+  transform: translateX(150px);
 }
 
 .modal-body{
