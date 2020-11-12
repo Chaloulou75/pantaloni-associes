@@ -31,8 +31,8 @@
             <transition name="fade">
               <ul class="absolute right-0 w-64 px-4 py-2 mt-2 -mr-24 text-sm text-white bg-gray-800 rounded-lg" v-if="listTeam" @click="listTeam = false">
                 <li class="px-2 py-2"><NuxtLink :to="{ path: '/',hash:'#MarcPantaloni'}">Marc PANTALONI</NuxtLink></li>
-                <li class="px-2 py-2"><NuxtLink :to="{ path: '/',hash:'#MagaliGreiner'}">Magali GREINER</NuxtLink></li>
                 <li class="px-2 py-2"><NuxtLink :to="{ path: '/',hash:'#GaelleGouguet'}">Gaëlle GOUGUET</NuxtLink></li>
+                <li class="px-2 py-2"><NuxtLink :to="{ path: '/',hash:'#MagaliGreiner'}">Magali GREINER</NuxtLink></li>
                 <li class="px-2 py-2"><NuxtLink :to="{ path: '/',hash:'#SandrineNivet-Abdoun'}">Sandrine NIVET-ABDOUN</NuxtLink></li>
               </ul>
             </transition>
@@ -57,8 +57,8 @@
             <transition name="fade">
               <ul class="absolute left-0 w-56 px-4 py-2 ml-24 -mt-16 text-sm text-white bg-gray-800 rounded-lg" v-if="listTeam" @click="listTeam = false">
                 <li class="px-2 py-2"><NuxtLink :to="{ path: '/',hash:'#MarcPantaloni'}">Marc PANTALONI</NuxtLink></li>
-                <li class="px-2 py-2"><NuxtLink :to="{ path: '/',hash:'#MagaliGreiner'}">Magali GREINER</NuxtLink></li>
                 <li class="px-2 py-2"><NuxtLink :to="{ path: '/',hash:'#GaelleGouguet'}">Gaëlle GOUGUET</NuxtLink></li>
+                <li class="px-2 py-2"><NuxtLink :to="{ path: '/',hash:'#MagaliGreiner'}">Magali GREINER</NuxtLink></li>
                 <li class="px-2 py-2"><NuxtLink :to="{ path: '/',hash:'#SandrineNivet-Abdoun'}">Sandrine NIVET-ABDOUN</NuxtLink></li>
               </ul>
             </transition>
