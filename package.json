@@ -15,6 +15,7 @@
     "nuxt": "^2.14.5",
     "nuxt-compress": "^4.1.0",
     "scroll-out": "^2.2.12",
+    "tailwindcss": "^1.9.6",
     "vanilla-back-to-top": "^7.2.1",
     "vue-scrollto": "^2.18.2"
   },

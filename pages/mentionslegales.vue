@@ -1,9 +1,9 @@
 <template>
   <div class="bg-gray-200">
     <nav class="relative flex justify-between w-full px-6 py-4 bg-gray-200 border-gold border-t-14">
-      <a href="/" class="text-sm font-medium text-gray-900 transition duration-500 ease-in-out transform border-b border-gray-800 cursor-pointer hover:border-blue-700 lg:text-base hover:text-blue-700">
+      <nuxt-link to="/" class="text-sm font-medium text-gray-900 transition duration-500 ease-in-out transform border-b border-gray-800 cursor-pointer hover:border-blue-700 lg:text-base hover:text-blue-700">
         Revenir à l'Acceuil
-      </a>
+      </nuxt-link>
     </nav>
 
     <div class="h-auto px-6 pb-8 mx-auto text-sm text-gray-900 bg-gray-200 mentions container-inner">
@@ -69,15 +69,10 @@
 </template>
 
 <script>
-import Footer from './../components/Footer.vue'
-
 export default {
-  components :{
-    Footer
-  },
   data() {
       return {
-        title: 'Pantaloni & Associés | Avocats à la Cour'
+        title: 'Pantaloni & Associés | Mentions Légales'
       }
     },
   head() {
@@ -94,7 +89,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-
-</style>

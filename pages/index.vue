@@ -2,12 +2,11 @@
   <div class="relative min-h-screen bg-gray-100">
       <Hero />
       <Cabinet />
-      <!-- <Expertise /> -->
       <Equipe />
       <Contact />
       <Footer />
 
-      <visible when-hidden="#herotop">
+      <Visible when-hidden="#herotop">
         <div class="fixed bottom-0 right-0 z-20 mb-16 mr-6">
           <div class="p-2 bg-gray-300 border rounded-full opacity-75">
             <scroll-link href="#herotop" class="text-gray-800">
@@ -15,34 +14,13 @@
             </scroll-link>
           </div>
         </div>
-      </visible>
+      </Visible>
 
   </div>
 </template>
 
 <script>
-import Hero from './../components/Hero.vue'
-import Cabinet from './../components/Cabinet.vue'
-import Equipe from './../components/Equipe/Equipe.vue'
-import Contact from './../components/Contact.vue'
-import Footer from './../components/Footer.vue'
-import ScrollLink from './../components/ScrollLink.vue'
-import Visible from './../components/Visible.vue'
-
-
 export default {
-  components :{
-    Hero,
-    Cabinet,
-    Equipe,
-    Contact,
-    Footer,
-    ScrollLink,
-    Visible
-  },
 }
 </script>
 
-<style scoped>
-
-</style>
