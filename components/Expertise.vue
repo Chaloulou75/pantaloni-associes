@@ -1,28 +1,61 @@
 <template>
-    <div class="min-h-screen" id="savoir-faire">
-      <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75" >Savoir faire</h2>
-
-      <div class="flex flex-col-reverse items-center justify-between my-8 lg:flex-row">
-        <div class="w-full px-4 lg:w-1/2">
-          <h3 class="py-2 text-2xl font-medium text-center">Un sous titre</h3>
-          <div class="line-1"></div>
-          <p class="py-4 mx-auto text-lg tracking-wide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero, incidunt facere.<br>
-          Ut cillum cillum nostrud sunt id elit. Quis pariatur amet ipsum exercitation cupidatat cupidatat dolore. Culpa cillum ipsum aliquip aliqua consectetur est sunt commodo cillum est pariatur. Eu voluptate culpa dolore cupidatat officia mollit Lorem. Eiusmod magna in est veniam adipisicing enim est adipisicing eu ea reprehenderit aliqua elit exercitation. Minim consectetur quis nostrud aute consectetur ut non veniam in culpa ad tempor. Velit qui officia commodo anim minim dolor nulla eu reprehenderit ea esse.</p>
-          <h3 class="py-2 text-2xl font-medium text-center">Un sous titre</h3>
-          <div class="line-1"></div>
-          <p class="py-4 mx-auto text-lg tracking-wide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, quo blanditiis sequi possimus, nesciunt corrupti nam iusto vero omnis repudiandae cumque ipsam. Ab repudiandae sed distinctio illum vero, incidunt facere.<br>
-          Ut cillum cillum nostrud sunt id elit. Quis pariatur amet ipsum exercitation cupidatat cupidatat dolore. Culpa cillum ipsum aliquip aliqua consectetur est sunt commodo cillum est pariatur. Eu voluptate culpa dolore cupidatat officia mollit Lorem. Eiusmod magna in est veniam adipisicing enim est adipisicing eu ea reprehenderit aliqua elit exercitation. Minim consectetur quis nostrud aute consectetur ut non veniam in culpa ad tempor. Velit qui officia commodo anim minim dolor nulla eu reprehenderit ea esse.</p>
+    <div class="min-h-screen" id="expertise">
+      <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75" > Expertise</h2>
+      <div class="items-center justify-between my-8 lg:flex lg:flex-row-reverse">
+        <div class="w-full lg:w-1/2" data-scroll>
+          <img loading="lazy" src="~assets/img/compress/palaisj.jpg" alt="expertise" class="px-3 mx-auto" />
+        </div>
+        <div class="w-full px-4 py-4 lg:w-1/2" data-scroll>
+          <div class="my-8 line-1"></div>
+          <!-- <h3 class="py-2 text-2xl font-medium text-center">Un sous titre</h3> -->
+          <p class="py-2 mx-auto text-xl tracking-wide text-justify text-indent">
+          Depuis sa constitution, le Cabinet PANTALONI &amp; ASSOCIES propose à ses clients un accompagnement <span class="font-semibold">sur mesure</span> dans ses domaines d’interventions.
+          </p>
+          <p class="py-2 mx-auto text-xl tracking-wide text-justify text-indent">
+          Le Cabinet dispose d’une compétence reconnue en <span class="font-semibold">matière pénale</span>, en <span class="font-semibold">Droit de la construction</span>, en <span class="font-semibold">Droit de la responsabilité</span> et en <span class="font-semibold">Droit des assurances</span>.
+          </p>
+          <p class="py-2 mx-auto text-xl tracking-wide text-justify text-indent">
+          De taille humaine, croisant les compétences, le Cabinet assure un service personnalisé à ses clients qu’il conseille et accompagne en demande comme en défense dans le <span class="font-semibold">respect des règles professionnelles</span> et notamment de <span class="font-semibold">confidentialité</span>.
+          </p>
+          <p class="py-2 mx-auto text-xl tracking-wide text-justify text-indent">
+          Sa clientèle est constituée d’Institutionnels, de grandes sociétés, moyennes et petites entreprises ainsi que de particuliers.
+          </p>
+          <div class="my-8 line-1"></div>
         </div>
 
-        <div class="w-full lg:w-1/2">
-          <img src="~assets/img/compress/statue.jpg" alt="hero" class="px-3 mx-auto sm:mx-0" />
-        </div>
       </div>
     </div>
 </template>
 
 <script>
+import ScrollOut from "scroll-out"
+
 export default {
+  mounted() {
+    this.so = ScrollOut({
+      scope: this.$el,
+      threshold: .2
+    });
+  },
+  destroyed() {
+    this.so.teardown();
+  }
 
 }
 </script>
+
+<style scoped>
+
+[data-scroll] {
+  transition: all 1.7s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: scale(1);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: scale(0.85);
+}
+</style>

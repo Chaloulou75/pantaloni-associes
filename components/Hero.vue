@@ -1,13 +1,31 @@
 <template>
     <div class="hero" id="herotop">
-      <Navigation />
-      <div class="flex items-center justify-center h-screen mx-auto ">
-        <h1 class="relative text-4xl font-semibold text-center transform -translate-y-24 md:text-5xl">
+      <!-- <Navigation /> -->
+      <div class="flex flex-col items-center justify-center h-screen mx-auto ">
+        <h1 class="relative mt-auto text-4xl font-bold text-center transform -translate-y-24 md:text-6xl">
           <span>Pantaloni &amp; Associés</span>
-          <span id="subtitulo" class="block px-4 mt-4 font-normal text-center text-gray-800">
+          <span id="subtitulo" class="block px-4 mt-4 font-semibold text-center text-gray-800">
             - Avocats à la Cour -
           </span>
         </h1>
+        <!-- desktop-menu -->
+        <div class="mt-8 mb-20 mr-auto md:my-16 desktop-menu md:mx-auto">
+          <ul class="flex flex-col justify-around space-y-3 text-xl font-bold uppercase lg:text-2xl md:space-x-8 md:space-y-0 md:flex-row">
+            <li class="px-3 tracking-wide text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
+              <scroll-link href="#cabinet">Le cabinet</scroll-link>
+            </li>
+            <li class="px-3 tracking-wide text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
+              <scroll-link href="#expertise">Expertise</scroll-link>
+              </li>
+            <li class="relative px-3 tracking-wide text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
+              <scroll-link href="#equipe">L'equipe</scroll-link>
+            </li>
+            <li class="px-3 tracking-wide text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
+              <scroll-link href="#contact">Contact</scroll-link>
+            </li>
+          </ul>
+        </div><!-- end desktop-menu -->
+
       </div>
     </div>
 
@@ -60,6 +78,31 @@ h1 {
     span {
       background-size: 100%;
     }
+  }
+}
+
+a {
+  font-family: 'Cormorant Garamond', 'font-sans', sans-serif;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: all .4s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+    transform: translateY(-7px);
+}
+
+a {
+  background-image: linear-gradient(
+      transparent calc(65% - 5px),
+      darken($color, 1%) 5px,
+  );
+  background-size: 0;
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+
+  &:hover {
+    background-size: 100%;
   }
 }
 </style>

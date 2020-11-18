@@ -49,9 +49,9 @@
           <li class="px-3 font-semibold text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
             <NuxtLink :to="{ path: '/',hash:'#cabinet'}">Le cabinet</NuxtLink>
           </li>
-          <!-- <li class="px-3 text-gray-800 transition duration-500 ease-in-out transform cursor-pointer hover:text-gray-900 hover:translate-x-2">
-            <NuxtLink :to="{ path: '/',hash:'#savoir-faire'}">Savoir faire</NuxtLink>
-          </li> -->
+          <li class="px-3 font-semibold text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
+            <NuxtLink :to="{ path: '/',hash:'#expertise'}">Expertise</NuxtLink>
+          </li>
           <li class="relative px-3 font-semibold text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2" @mouseover="listTeam = true" @mouseleave="listTeam = false" >
             <NuxtLink :to="{ path: '/',hash:'#equipe'}">L'equipe</NuxtLink>
             <transition name="fade">
