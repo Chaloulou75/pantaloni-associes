@@ -10,15 +10,15 @@
         </h1>
         <!-- desktop-menu -->
         <div class="mt-8 mb-20 mr-auto md:my-16 desktop-menu md:mx-auto">
-          <ul class="flex flex-col justify-around space-y-3 text-xl font-bold uppercase lg:text-2xl md:space-x-8 md:space-y-0 md:flex-row">
+          <ul class="flex flex-col justify-around space-y-3 text-lg font-bold uppercase lg:text-2xl md:space-x-8 md:space-y-0 md:flex-row">
             <li class="px-3 tracking-wide text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
               <scroll-link href="#cabinet">Le cabinet</scroll-link>
             </li>
-            <li class="px-3 tracking-wide text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
-              <scroll-link href="#expertise">Expertise</scroll-link>
-              </li>
             <li class="relative px-3 tracking-wide text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
               <scroll-link href="#equipe">L'equipe</scroll-link>
+            </li>
+            <li class="px-3 tracking-wide text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
+              <scroll-link href="#expertise">Expertise</scroll-link>
             </li>
             <li class="px-3 tracking-wide text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
               <scroll-link href="#contact">Contact</scroll-link>

@@ -2,8 +2,8 @@
   <div class="relative min-h-screen bg-gray-100">
       <Hero />
       <Cabinet />
-      <Expertise />
       <Equipe />
+      <Expertise />
       <Contact />
       <Footer />
 
