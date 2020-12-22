@@ -12,16 +12,19 @@
     "@nuxtjs/axios": "^5.12.2",
     "core-js": "^3.6.5",
     "in-viewport": "^3.6.0",
-    "nuxt": "^2.14.5",
+    "nuxt": "^2.14.12",
     "nuxt-compress": "^4.1.0",
     "scroll-out": "^2.2.12",
-    "tailwindcss": "^1.9.6",
     "vanilla-back-to-top": "^7.2.1",
     "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.0.2",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9.8.6",
     "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.2"
+    "postcss": "^7.0.35",
+    "sass-loader": "^10.0.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   }
 }
