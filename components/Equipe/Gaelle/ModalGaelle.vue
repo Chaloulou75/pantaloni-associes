@@ -6,7 +6,7 @@
       <div v-show="show_modal" class="fixed inset-0 z-40">
 
 <!--       background -->
-        <div v-show="show_modal" @click="showModal()" class="fixed inset-0 z-20 w-full h-full bg-gray-800 opacity-75 bg-filter">
+        <div v-show="show_modal" @click="showModal()" class="fixed inset-0 z-20 w-full h-full bg-gray-800 bg-opacity-75">
         </div>
 <!--        inline-block  -->
         <main class="flex flex-col items-center justify-center w-full h-full">

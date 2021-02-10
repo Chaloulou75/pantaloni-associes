@@ -22,7 +22,6 @@
           </p>
           <div class="my-8 line-1"></div>
         </div>
-
       </div>
     </div>
 </template>

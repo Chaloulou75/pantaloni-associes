@@ -1,23 +1,19 @@
 <template>
-<div class="relative ">
+<div class="relative">
   <div class="flex items-center justify-center w-full h-full">
     <transition name="fade">
-
       <div v-show="show_modal" class="fixed inset-0 z-40">
-
 <!--       background -->
-        <div v-show="show_modal" @click="showModal()" class="fixed inset-0 z-20 w-full h-full bg-gray-800 opacity-75 bg-filter">
+        <div v-show="show_modal" @click="showModal()" class="fixed inset-0 z-20 w-full h-full bg-gray-800 bg-opacity-75">
         </div>
 <!--        inline-block  -->
         <main class="flex flex-col items-center justify-center w-full h-full">
             <transition name="fade-up-down">
                 <div v-show="show_modal" class="z-30 flex items-center modal-wrapper">
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
-
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
                             <h2 class="text-2xl text-gray-800 text-indent"> <span>Marc Pantaloni </span></h2>
                         </div>
-
                         <div class="w-full h-full p-5 overflow-y-auto text-justify text-gray-700 modal-body">
                             <p class="py-1 tracking-wide text-indent">
                               Associé au sein du Cabinet RONSSERAY TOURNOIS & ASSOCIES, puis membre fondateur du Cabinet SELNET PANTALONI FISCHER, Marc PANTALONI a constitué une équipe dédiée au service de clients auxquels sont apportés tant la formation à raison de séminaires dédiés que le conseil, l’assistance pré-contentieuse et contentieuse qui leur est nécessaire. </p>

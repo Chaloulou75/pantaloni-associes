@@ -1,14 +1,13 @@
 <template>
   <div class="bg-gray-200">
     <nav class="relative flex justify-between w-full px-6 py-4 bg-gray-200 border-gold border-t-14">
-      <nuxt-link to="/" class="text-sm font-medium text-gray-900 transition duration-500 ease-in-out transform border-b border-gray-800 cursor-pointer hover:border-blue-700 lg:text-base hover:text-blue-700">
+      <nuxt-link to="/" class="text-sm font-medium text-gray-900 transition duration-500 ease-in-out transform border-b border-gray-800 cursor-pointer hover:font-semibold hover:border-gray-900 lg:text-base hover:text-black">
         Revenir à l'Acceuil
       </nuxt-link>
     </nav>
 
     <div class="h-auto px-6 pb-8 mx-auto text-sm text-gray-900 bg-gray-200 mentions container-inner">
-      <h2 class="py-4 mb-4 text-3xl font-semibold tracking-wider text-center"> -Mentions légales-</h2>
-
+      <h1 class="py-4 mb-4 text-3xl font-semibold tracking-wider text-center"> -Mentions légales-</h1>
         <div class="mb-6 text-lg">
           <p>Raison sociale : Pantaloni &amp; Associés<br />
           Forme juridique : Association d’Avocats à Responsabilité Professionnelle Individuelle<br />
@@ -19,14 +18,11 @@
         </div>
         <div class="mb-6 text-base">
           <h3 class="mb-6 font-semibold">Propriété intellectuelle</h3>
-
           <div class="mb-6">
             <p>Pantaloni &amp; Associés détient, se réserve et conserve tous les droits de propriété, notamment intellectuelle, y compris les droits de reproduction sur le présent site et les éléments qu’il contient. En conséquence et notamment toute reproduction partielle ou totale du présent site et des éléments qu’il contient est strictement interdite sans autorisation écrite de Pantaloni &amp; Associés. Les logos et tous autres signes distinctifs contenus sur ce site sont la propriété de Pantaloni &amp; Associés ou font l’objet d’une autorisation d’utilisation. Aucun droit ou licence ne saurait être attribué sur l’un quelconque de ces éléments sans l’autorisation écrite de Pantaloni &amp; Associés ou du tiers détenteur des droits.</p>
           </div>
 
-
           <h3 class="mb-6 font-semibold">Contenu</h3>
-
           <div class="mb-6">
             <p>Les informations fournies sur ce site par Pantaloni &amp; Associés ne sont données qu’à titre indicatif et n’ont pas de valeur contractuelle.<br />
             Pantaloni &amp; Associés s’efforce de mettre à jour le site mais ne garantit ni l’exactitude ni le caractère exhaustif des informations présentées sur ce site, quelles qu’elles soient. En cas de différence entre les informations concernant les produits, c’est l’emballage qui fait foi.<br />
@@ -41,14 +37,11 @@
           </div>
 
           <h3 class="mb-6 font-semibold">Lien vers d’autres sites</h3>
-
           <div class="mb-6">
             <p>Le site peut inclure des liens vers d’autres sites ou d’autres sources Internet. Dans la mesure où Pantaloni &amp; Associés ne peut contrôler ces sites et ces sources externes, Pantaloni &amp; Associés ne peut être tenu pour responsable de la mise à disposition de ces sites et sources externes, et décline ainsi toute responsabilité quant aux contenus, publicités, produits, services ou tout autre matériel disponible sur ou à partir de ces sites ou sources externes. Ces liens sont proposés aux utilisateurs du site www.pantaloni-associes.com en tant que service. La décision d’activer les liens vous appartient exclusivement. Nous vous rappelons que les sites non-affiliés sont soumis à leurs propres conditions d’utilisation.</p>
           </div>
 
-
           <h3 id="cookies" class="mb-6 font-semibold">Cookies</h3>
-
           <div class="mb-6">
             <p>Lors de vos visites, vous êtes informé qu’un témoin de connexion peut s’installer automatiquement sur votre logiciel de navigation. Il s’agit d’un bloc de données qui n’est pas utilisé à des fins d’identification mais qui sert à enregistrer des informations relatives à votre navigation sur le site. Il permet des analyses de fréquentation, mesures d’audience… afin d’améliorer la qualité du site. Vous pouvez désactiver les cookies en suivant les instructions comme suit :</p>
 
@@ -64,7 +57,6 @@
     </div>
 
     <Footer />
-
   </div>
 </template>
 
@@ -82,10 +74,28 @@ export default {
           {
             hid: 'Description ',
             name: 'Description',
-            content: 'Pantaloni & Associés | Avocats à la Cour'
+            content: 'Pantaloni & Associés | Mentions Légales'
           }
         ]
       }
     }
 }
 </script>
+
+<style lang="scss" scoped>
+
+$color:#FFDF00;
+a {
+  background-image: linear-gradient(
+      transparent calc(65% - 5px),
+      darken($color, 1%) 5px,
+  );
+  background-size: 0;
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+
+  &:hover {
+    background-size: 100%;
+  }
+}
+</style>

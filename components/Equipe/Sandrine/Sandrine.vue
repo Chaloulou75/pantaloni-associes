@@ -25,15 +25,9 @@
 
 <script>
 import ScrollOut from "scroll-out"
-import ModalSandrine from './ModalSandrine.vue'
-import ModalmobileSandrine from './ModalmobileSandrine.vue'
-
 
 export default {
-  components : {
-    ModalSandrine,
-    ModalmobileSandrine
-  },mounted() {
+  mounted() {
     this.so = ScrollOut({
       scope: this.$el,
       threshold: .3

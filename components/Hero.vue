@@ -1,14 +1,14 @@
 <template>
     <div class="hero" id="herotop">
       <!-- <Navigation /> -->
-      <div class="flex flex-col items-center justify-center h-screen mx-auto ">
-        <h1 class="relative mt-auto text-4xl font-bold text-center transform -translate-y-24 lg:text-7xl">
+      <div class="flex flex-col items-center justify-center min-h-screen mx-auto ">
+        <h1 class="relative pb-6 mt-auto text-4xl font-bold text-center lg:pb-24 lg:text-7xl">
           <span>Pantaloni &amp; Associés</span>
           <span id="subtitulo" class="block px-4 mt-6 text-3xl font-semibold text-center text-gray-800 lg:text-6xl">
             - Avocats à la Cour -
           </span>
         </h1>
-        <!-- desktop-menu -->
+        <!---menu -->
         <div class="mt-8 mb-20 mr-auto md:my-16 desktop-menu md:mx-auto">
           <ul class="flex flex-col justify-around space-y-3 text-lg font-bold uppercase lg:text-2xl md:space-x-8 md:space-y-0 md:flex-row">
             <li class="px-3 tracking-wide text-gray-900 transition duration-500 ease-in-out transform cursor-pointer hover:text-black hover:translate-x-2">
@@ -24,7 +24,7 @@
               <scroll-link href="#contact">Contact</scroll-link>
             </li>
           </ul>
-        </div><!-- end desktop-menu -->
+        </div><!-- end menu -->
 
       </div>
     </div>

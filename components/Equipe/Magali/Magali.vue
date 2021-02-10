@@ -12,7 +12,6 @@
           alt="Magali"
           class="mx-auto sm:mx-0"
         />
-
       </div>
 
       <div class="flex flex-col justify-between w-full px-6 py-4 lg:w-1/2">
@@ -25,14 +24,8 @@
 
 <script>
 import ScrollOut from "scroll-out"
-import ModalMagali from './ModalMagali.vue'
-import ModalmobileMagali from './ModalmobileMagali.vue'
 
 export default {
-  components : {
-    ModalMagali,
-    ModalmobileMagali
-  },
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,

@@ -21,18 +21,8 @@
 
 <script>
 import ScrollOut from "scroll-out"
-import Marc from './Marc/Marc.vue'
-import Sandrine from './Sandrine/Sandrine.vue'
-import Gaelle from './Gaelle/Gaelle.vue'
-import Magali from './Magali/Magali.vue'
 
 export default {
-  components : {
-    Marc,
-    Sandrine,
-    Gaelle,
-    Magali
-  },
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,

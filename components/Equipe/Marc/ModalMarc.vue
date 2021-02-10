@@ -6,7 +6,7 @@
       <div v-show="show_modal" class="fixed inset-0 z-40">
 
 <!--       background -->
-        <div v-show="show_modal" @click="showModal()" class="fixed inset-0 z-20 w-full h-full bg-gray-800 opacity-75 bg-filter">
+        <div v-show="show_modal" @click="showModal()" class="fixed inset-0 z-20 w-full h-full bg-gray-800 bg-opacity-75">
         </div>
 <!--        inline-block  -->
         <main class="flex flex-col items-center justify-center w-full h-full">
@@ -15,25 +15,25 @@
                     <div class="relative flex-row max-w-md max-h-screen mx-auto bg-white rounded shadow-lg modal xl:max-w-5xl lg:max-w-5xl md:max-w-2xl">
 
                         <div class="p-5 bg-gray-300 rounded-t modal-header">
-                            <h2 class="text-2xl text-gray-800 text-indent"><span>Marc Pantaloni</span></h2>
+                          <h2 class="text-2xl text-gray-800 text-indent"><span>Marc Pantaloni</span></h2>
                         </div>
                         <div class="w-full h-full p-5 overflow-y-auto text-gray-700 modal-body">
-                            <p class="py-1 tracking-wide text-indent">
-                              Associé au sein du Cabinet RONSSERAY TOURNOIS & ASSOCIES, puis membre fondateur du Cabinet SELNET PANTALONI FISCHER, Marc PANTALONI a constitué une équipe dédiée au service de clients auxquels sont apportés tant la formation à raison de séminaires dédiés que le conseil, l’assistance pré-contentieuse et contentieuse qui leur est nécessaire. </p>
-                            <p class="py-1 tracking-wide text-indent">
-                              En matière pénale, Marc PANTALONI est intervenu et intervient dans de nombreux dossiers à forts enjeux tant en droit pénal des affaires et financiers qu’en droit pénal général et du travail.
-                            </p>
-                            <p class="py-1 tracking-wide text-indent">
-                              Son activité se déploie en outre dans les domaines de la construction et de l’immobilier où il intervient aux côtés d’entreprises de BTP ou de leurs assureurs.
-                            </p>
-                            <p class="py-1 tracking-wide text-indent">
-                              Enfin, il assure dans le cadre de leurs responsabilités civiles professionnelles et/ou contractuelles la défense d’agents immobiliers et des professionnels du droit, notamment notaires, experts judiciaires…
-                            </p>
+                          <p class="py-1 tracking-wide text-indent">
+                            Associé au sein du Cabinet RONSSERAY TOURNOIS & ASSOCIES, puis membre fondateur du Cabinet SELNET PANTALONI FISCHER, Marc PANTALONI a constitué une équipe dédiée au service de clients auxquels sont apportés tant la formation à raison de séminaires dédiés que le conseil, l’assistance pré-contentieuse et contentieuse qui leur est nécessaire. </p>
+                          <p class="py-1 tracking-wide text-indent">
+                            En matière pénale, Marc PANTALONI est intervenu et intervient dans de nombreux dossiers à forts enjeux tant en droit pénal des affaires et financiers qu’en droit pénal général et du travail.
+                          </p>
+                          <p class="py-1 tracking-wide text-indent">
+                            Son activité se déploie en outre dans les domaines de la construction et de l’immobilier où il intervient aux côtés d’entreprises de BTP ou de leurs assureurs.
+                          </p>
+                          <p class="py-1 tracking-wide text-indent">
+                            Enfin, il assure dans le cadre de leurs responsabilités civiles professionnelles et/ou contractuelles la défense d’agents immobiliers et des professionnels du droit, notamment notaires, experts judiciaires…
+                          </p>
                         </div>
                         <div class="px-5 py-3 text-right modal-footer ">
-                            <button class="px-5 py-2 text-gray-800 cursor-pointer focus:outline-none" @click="showModal()">
-                              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                            </button>
+                          <button class="px-5 py-2 text-gray-800 cursor-pointer focus:outline-none" @click="showModal()">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                          </button>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
 
     <div @click="showModal()" data-scroll>
 
-      <h2 class="hidden py-2 mb-2 text-5xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:block"> <span > Marc Pantaloni</span> </h2>
+      <h2 class="hidden py-2 mb-2 text-5xl font-medium text-center text-gray-700 cursor-pointer hover:text-gray-800 lg:block"> <span> Marc Pantaloni</span> </h2>
       <div class="hidden py-2 line-1 lg:block"></div>
 
       <ul class="px-8 py-2 mx-auto text-lg italic tracking-wide text-justify list-disc list-inside">
@@ -183,6 +183,4 @@ h2, h5 {
     }
   }
 }
-
-
 </style>

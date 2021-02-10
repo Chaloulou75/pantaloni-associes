@@ -25,14 +25,8 @@
 
 <script>
 import ScrollOut from "scroll-out"
-import ModalGaelle from './ModalGaelle.vue'
-import ModalmobileGaelle from './ModalmobileGaelle.vue'
 
 export default {
-  components : {
-    ModalGaelle,
-    ModalmobileGaelle
-  },
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,
