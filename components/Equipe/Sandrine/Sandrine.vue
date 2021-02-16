@@ -1,7 +1,7 @@
 <template>
   <div class="h-auto my-24 overflow-hidden" id="SandrineNivet-Abdoun">
 
-    <modalmobile-sandrine />
+    <LazyEquipeSandrineModalmobileSandrine />
 
     <div class="hidden lg:flex-row lg:items-center lg:justify-between lg:flex">
 
@@ -16,7 +16,7 @@
       </div>
 
       <div class="flex flex-col justify-between w-full px-6 py-4 lg:w-1/2">
-           <modal-sandrine />
+           <LazyEquipeSandrineModalSandrine />
       </div>
 
     </div>

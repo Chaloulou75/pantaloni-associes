@@ -1,13 +1,11 @@
 <template>
     <div class="hero" id="herotop">
       <!-- <Navigation /> -->
-      <div class="flex flex-col items-center justify-center min-h-screen mx-auto ">
-        <h1 class="relative pb-6 mt-auto text-4xl font-bold text-center lg:pb-24 lg:text-7xl">
-          <span>Pantaloni &amp; Associés</span>
-          <span id="subtitulo" class="block px-4 mt-6 text-3xl font-semibold text-center text-gray-800 lg:text-6xl">
-            - Avocats à la Cour -
-          </span>
-        </h1>
+      <div class="flex flex-col items-center justify-center min-h-screen mx-auto">
+        <div class="mt-auto mb-8 space-y-6 lg:mb-24">
+          <h1 id="titulo" class="text-4xl font-bold text-center text-gray-900 lg:text-7xl" data-scroll><span>Pantaloni &amp; Associés</span></h1>
+          <h2 id="subtitulo" class="text-3xl font-semibold text-center text-gray-800 lg:text-6xl" data-scroll><span> - Avocats à la Cour -</span></h2>
+        </div>
         <!---menu -->
         <div class="mt-8 mb-20 mr-auto md:my-16 desktop-menu md:mx-auto">
           <ul class="flex flex-col justify-around space-y-3 text-lg font-bold uppercase lg:text-2xl md:space-x-8 md:space-y-0 md:flex-row">
@@ -31,7 +29,17 @@
 
 </template>
 <script>
+import ScrollOut from "scroll-out"
+
 export default {
+  mounted() {
+    this.so = ScrollOut({
+      scope: this.$el,
+    });
+  },
+  destroyed() {
+    this.so.teardown();
+  }
 
 }
 </script>
@@ -62,7 +70,7 @@ export default {
 
 $color:#FFDF00;
 
-h1 {
+h1, h2 {
   span {
     background-image: linear-gradient(
       transparent calc(65% - 5px),
@@ -84,6 +92,7 @@ h1 {
 a {
   font-family: 'Cormorant Garamond', 'font-sans', sans-serif;
 }
+
 .fade-enter-active, .fade-leave-active {
     transition: all .4s;
 }
@@ -105,4 +114,29 @@ a {
     background-size: 100%;
   }
 }
+
+#titulo, #subtitulo, [data-scroll] {
+  transition: all 2s;
+}
+
+#titulo, #titulo[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#titulo, #titulo[data-scroll="out"] {
+  opacity: 0;
+  transform: translateY(-65px);
+}
+
+#subtitulo, #subtitulo[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#subtitulo, #subtitulo[data-scroll="out"] {
+  opacity: 0;
+  transform: translateY(-105px);
+}
+
 </style>

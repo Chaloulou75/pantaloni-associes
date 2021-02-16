@@ -8,13 +8,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Pantaloni & Associés | Avocats à la Cour. Cabinet d\'avocats à Paris. Droit de la construction. Droit de la responsabilité. Droit des assurances' }
+      { hid: 'description', name: 'description', content: 'Cabinet d\'avocats à Paris. Droit de la construction. Droit de la responsabilité. Droit des assurances' }
     ],
     link: [
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-      { rel: 'manifest', href: '/site.webmanifest' },
+      // { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      // { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      // { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      // { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap' }
@@ -38,7 +38,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    "nuxt-compress"
+    "nuxt-compress",
+    '@nuxtjs/pwa',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

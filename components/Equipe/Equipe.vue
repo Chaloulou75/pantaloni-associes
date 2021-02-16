@@ -12,10 +12,10 @@
         />
       </div>
     </div>
-    <marc />
-    <gaelle />
-    <magali />
-    <sandrine />
+    <LazyEquipeMarc />
+    <LazyEquipeGaelle />
+    <LazyEquipeMagali />
+    <LazyEquipeSandrine />
   </div>
 </template>
 
@@ -47,7 +47,7 @@ export default {
 }
 [data-scroll="out"] {
   opacity: 0;
-  transform: scale(0.85);
+  transform: scale(0.9);
 }
 
 </style>

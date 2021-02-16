@@ -1,13 +1,13 @@
 <template>
   <div class="relative min-h-screen bg-gray-100">
       <Hero />
-      <Cabinet />
-      <Equipe />
-      <Expertise />
-      <Contact />
-      <Footer />
+      <LazyCabinet />
+      <LazyEquipe />
+      <LazyExpertise />
+      <LazyContact />
+      <LazyFooter />
 
-      <Visible when-hidden="#herotop">
+      <visible when-hidden="#herotop">
         <div class="fixed bottom-0 right-0 z-20 mb-16 mr-6">
           <div class="p-2 bg-gray-400 border border-white rounded-full opacity-75 hover:opacity-100">
             <scroll-link href="#herotop" class="text-gray-800">
@@ -15,7 +15,7 @@
             </scroll-link>
           </div>
         </div>
-      </Visible>
+      </visible>
 
   </div>
 </template>
