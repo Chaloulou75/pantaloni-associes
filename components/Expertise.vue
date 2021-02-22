@@ -47,15 +47,13 @@ export default {
 <style scoped>
 
 [data-scroll] {
-  transition: all 1.7s;
+  transition: all 1.2s;
 }
 
 [data-scroll="in"] {
   opacity: 1;
-  transform: scale(1);
 }
 [data-scroll="out"] {
   opacity: 0;
-  transform: scale(0.85);
 }
 </style>

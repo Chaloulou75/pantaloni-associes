@@ -39,6 +39,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     "nuxt-compress",
+    '@aceforth/nuxt-optimized-images',
     '@nuxtjs/pwa',
   ],
 
@@ -58,6 +59,10 @@ export default {
       }
     ]
   ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
