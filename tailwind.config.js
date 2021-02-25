@@ -16,6 +16,9 @@ module.exports = {
         80: '20rem',
         108: '27rem'
       },
+      fontFamily: {
+        'cormorant': ['Cormorant Garamond', 'font-sans'],
+      }
     },
   },
   variants: {

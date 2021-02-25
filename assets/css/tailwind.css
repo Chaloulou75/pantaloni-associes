@@ -8,21 +8,12 @@
   }
 }
 
-html, body{
-  font-family: 'Cormorant Garamond', 'font-sans', sans-serif;
-}
-
 nav .nuxt-link-exact-active {
   @apply border-gold border-b-2;
 }
 
-h1, h2 {
-  font-family: 'Cormorant Garamond', 'font-sans';
-}
-
 .line-1 {
   @apply border-t border-gold w-1/4 mx-auto;
-
 }
 
 .container-inner {

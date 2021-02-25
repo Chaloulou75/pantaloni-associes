@@ -15,7 +15,6 @@ export default {
       // { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
       // { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
       // { rel: 'manifest', href: '/site.webmanifest' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap' }
     ]

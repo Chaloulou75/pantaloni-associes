@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-screen bg-gray-100">
+  <div class="relative min-h-screen bg-gray-100 font-cormorant">
       <Hero />
       <LazyCabinet />
       <LazyEquipe />
