@@ -21,7 +21,7 @@
           <div class="px-2 py-4 rounded-lg lg:px-12 lg:my-0">
             <p class="flex items-center pb-4 text-base text-center text-gray-100 cursor-pointer hover:font-semibold lg:text-xl">
               <svg class="inline-block w-6 h-6 mr-4 lg:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
-              <a href="mailto:mpantaloni@pantaloni-avocats.com" class="transition duration-500 ease-in-out transform text-gold hover:text-gray-100 hover:translate-x-2">mpantaloni@pantaloni-avocats.com</a>
+              <Mailto mail="mpantaloni@pantaloni-avocats.com" class="transition duration-500 ease-in-out transform text-gold hover:text-gray-100 hover:translate-x-2">mpantaloni@pantaloni-avocats.com</Mailto>
             </p>
           </div>
         </div>
