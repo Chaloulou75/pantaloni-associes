@@ -10,7 +10,7 @@
           loading="lazy"
           src="~assets/img/compress/livres2.jpg"
           alt="Sandrine"
-          class="mx-auto sm:mx-0"
+          class="h-auto max-w-full mx-auto sm:mx-0"
         />
 
       </div>

@@ -3,7 +3,7 @@
       <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center bg-gray-300 opacity-75" > Expertise</h2>
       <div class="items-center justify-between my-8 lg:flex lg:flex-row-reverse">
         <div class="w-full lg:w-1/2" data-scroll>
-          <img loading="lazy" src="~assets/img/compress/palaisj.jpg" alt="expertise" class="px-3 mx-auto" />
+          <img loading="lazy" src="~assets/img/compress/palaisj.jpg" alt="expertise" class="h-auto max-w-full px-3 mx-auto" />
         </div>
         <div class="w-full px-4 py-4 lg:w-1/2" data-scroll>
           <div class="my-8 line-1"></div>
