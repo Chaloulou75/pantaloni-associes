@@ -9,6 +9,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'palais-j': "url('~assets/img/compress/palaisj.jpg')",
+      }),
       colors: {
         gold: '#FFDF00',
       },
@@ -18,7 +21,7 @@ module.exports = {
       },
       fontFamily: {
         'cormorant': ['Cormorant Garamond', 'font-sans'],
-      }
+      },
     },
   },
   variants: {

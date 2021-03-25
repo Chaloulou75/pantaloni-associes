@@ -1,5 +1,5 @@
 <template>
-    <div class="hero" id="herotop">
+    <div class="bg-center bg-no-repeat bg-cover hero" id="herotop">
       <!-- <Navigation /> -->
       <div class="flex flex-col items-center justify-center min-h-screen mx-auto">
         <div class="mt-auto mb-8 space-y-6 lg:mb-24">
@@ -53,9 +53,10 @@ export default {
 
 .hero {
   height: 100vh;
+  max-width: 100%;
 	background: linear-gradient(45deg, rgba(255,175,189,.7), rgba(100,216,243,.7), rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url("~assets/img/compress/palaisj.jpg") 0 0 / cover no-repeat;
-	-webkit-animation: gradientAnimation 40s ease infinite;
-  animation: gradientAnimation 40s ease infinite;
+	-webkit-animation: gradientAnimation 25s ease infinite;
+  animation: gradientAnimation 25s ease infinite;
 }
 @-webkit-keyframes gradientAnimation {
 	0%   { background-position: 0% 30%, 0 0;}
