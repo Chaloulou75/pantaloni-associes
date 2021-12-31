@@ -12,10 +12,10 @@
         />
       </div>
     </div>
-    <LazyEquipeMarc />
-    <LazyEquipeGaelle />
-    <LazyEquipeMagali />
-    <LazyEquipeSandrine />
+    <EquipeMarc />
+    <EquipeGaelle />
+    <EquipeMagali />
+    <EquipeSandrine />
   </div>
 </template>
 

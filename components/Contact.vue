@@ -1,8 +1,8 @@
 <template>
-    <div class="min-h-screen bg-gray-800" id="contact" data-scroll>
+    <div class="min-h-full bg-gray-800" id="contact">
       <h2 class="sticky top-0 z-30 py-4 mb-4 text-3xl font-semibold tracking-wider text-center text-gray-100 bg-gray-800 opacity-75">Contact</h2>
 
-      <div class="justify-around lg:flex">
+      <div class="justify-around pb-32 lg:flex">
 
         <div class="flex justify-start w-full px-2 text-gray-100 lg:px:8 lg:justify-center lg:w-1/3">
           <div class="px-2 py-4 rounded-lg lg:px-12">

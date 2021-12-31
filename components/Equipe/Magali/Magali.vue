@@ -1,7 +1,7 @@
 <template>
   <div class="h-auto my-24 overflow-hidden" id="MagaliGreiner">
 
-    <LazyEquipeMagaliModalmobileMagali />
+    <EquipeMagaliModalmobileMagali />
 
     <div class="hidden lg:flex-row-reverse lg:items-center lg:justify-between lg:flex">
 
@@ -15,7 +15,7 @@
       </div>
 
       <div class="flex flex-col justify-between w-full px-6 py-4 lg:w-1/2">
-           <LazyEquipeMagaliModalMagali />
+           <EquipeMagaliModalMagali />
       </div>
 
     </div>

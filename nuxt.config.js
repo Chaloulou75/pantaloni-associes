@@ -22,6 +22,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '@/assets/css/tailwind.css',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -31,12 +32,11 @@ export default {
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
-  components: true,
+  components: { loader: true },
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
     "nuxt-compress",
     '@aceforth/nuxt-optimized-images',
     '@nuxtjs/pwa',
@@ -67,16 +67,18 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
-  tailwindcss: {
-    jit: true
-  },
-
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     html: {
       minify: {
         decodeEntities: false
       }
-    }
+    },
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
   }
 }

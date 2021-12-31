@@ -1,11 +1,11 @@
 <template>
-  <div class="relative min-h-screen bg-gray-100 font-cormorant">
+  <div class="relative min-h-screen bg-gray-100 font-cormorant scroll-smooth">
       <Hero />
-      <LazyCabinet />
-      <LazyEquipe />
-      <LazyExpertise />
-      <LazyContact />
-      <LazyFooter />
+      <Cabinet />
+      <Equipe />
+      <Expertise />
+      <Contact />
+      <Footer />
 
       <visible when-hidden="#herotop">
         <div class="fixed bottom-0 right-0 z-20 mb-16 mr-6">
@@ -16,7 +16,6 @@
           </div>
         </div>
       </visible>
-
   </div>
 </template>
 
